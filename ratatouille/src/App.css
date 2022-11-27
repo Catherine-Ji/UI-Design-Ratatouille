@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.sidenavbar{
+  background-color: blueviolet;
+  font-family: 'Nunito', sans-serif;
+  font-size: 150rem;
+}
+
+.page{
+  font-size: 5rem;
+}
