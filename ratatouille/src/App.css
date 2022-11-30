@@ -1,8 +1,8 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,14 +35,20 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
-.sidenavbar{
-  background-color: blueviolet;
-  font-family: 'Nunito', sans-serif;
+.sideNavBar {
+  background-color: white;
+  font-family: 'Nunito', sans-serif; 
   font-size: 150rem;
 }
 
-.page{
-  font-size: 5rem;
+.orange {
+  background-color: #e94f37;
 }
+
+.page {
+  font-size: 5rem;
+  text-align: center;
+}
+

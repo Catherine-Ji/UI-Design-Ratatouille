@@ -1,6 +1,6 @@
 function Home_newUser() {
     return (
-        <div>
+        <div className = 'page'>
             <h1> Home </h1>
             <p> Welcome to Ratatouillify! </p>
             <p> Please sign up or log in to get started! </p>

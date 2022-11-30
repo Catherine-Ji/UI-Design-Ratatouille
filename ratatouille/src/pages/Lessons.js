@@ -1,6 +1,6 @@
 function Lessons(){
     return(
-        <div>
+        <div className = 'page'>
             <h1> Lessons </h1>
         </div>
     )
