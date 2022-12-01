@@ -1,54 +1,312 @@
-/* .App {
+/* ody {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F1F4FD;
+}
+
+.App {
   text-align: center;
-} */
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  padding: 4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0rem 2rem 2rem 2rem;
+  color: #36476D;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styling for list component */
+/* .List {
+  margin-top: 3rem;
+}
+
+.list-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  padding: 1.2rem 1.5rem;
+  border-radius: 20px;
+  text-align: left;
+  margin: 1rem 0rem;
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.item-primary-text {
+  color: #36476D;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.item-secondary-text {
+  color: #828EA6;
+  font-size: 1.2rem;
+  line-height: 1rem;
+}
 
-.sideNavBar {
-  background-color: white;
-  font-family: 'Nunito', sans-serif; 
+.item-number {
+  margin: auto 3rem auto 1rem;
+}
+
+.item-delete {
+  margin: auto 1rem auto auto;
+  width: 1.2rem;
+}
+
+img {
+  width: 100%;
+}
+
+/* Styling for form input component */
+/* .Form {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+}
+
+.form-input {
+  border:0;
+  border-bottom: 2px solid #AFB1B5;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: transparent;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.form-input::placeholder {
+  color: #AFB1B5;
+  font-weight: 600;
+}
+
+.form-button {
+  background-color: #5954C8;
+  color: #FFFFFF;
+  border-radius: 12px;
+  height: fit-content;
+  padding: 0.5rem 2rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: auto 0.5rem;
+}
+
+.form-button:hover {
+  background-color: #4E49AB;
+  cursor: pointer;
+}
+
+.sidenavbar{
+  background-color: blueviolet;
+  font-family: 'Nunito', sans-serif;
   font-size: 150rem;
 }
-
-.orange {
-  background-color: #e94f37;
+ */
+ :root {
+  --orange: #E97F37;
+  --yellow: #f7b32b;
+  --almost_black: #1e1a1d;
+  --grey: #7e7f9a;
+  --almost_white: #eff2f1;
+  --width: 1438;
+  --height: 1024
 }
 
-.page {
-  font-size: 5rem;
+
+.column {
+  float: left;
+  height: 100vh;
+}
+
+.user {
+  padding-left: 43%;
+}
+
+.left {
+  width: 13.9%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.right {
+  width: 86.1%;
+  background-color: white;
+  box-shadow: inset 12px 0 10px -2px rgba(116, 116, 116, 0.4);
   text-align: center;
 }
 
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sidenavbar{
+  background-color: blueviolet;
+  font-family: 'Nunito', sans-serif;
+  font-size: 150rem;
+  width: 13.9%;
+}
+
+.smallLogo {
+  height: 40px;
+  width: 154px;
+  position: center;
+  display: block;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.largeLogo {
+  height: 12%;
+  width: 26.8%;
+  position: center;
+  display: block;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-group button {
+  background-color: white;
+  border: 1px solid white;
+  color: #1e1a1d;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 100%;
+  display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: white;
+  color: var(--orange);
+  font-weight: bold;
+}
+
+.container {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.lessoncard {
+  border: 5px solid var(--grey);
+  background-color: white;
+  padding: 125px 330px;
+  border-radius: 25px;
+  margin: 7%;
+}
+
+.lessoncard:hover {
+  box-shadow: var(--yellow) 0px 0px 20px;
+  padding: 127px 335px;
+}
+
+.yellow {
+  background-color: var(--yellow)
+}
+
+.orangetext {
+  color: var(--orange);
+}
+
+.circle1 {
+  opacity: 0.6;
+  height: 199px;
+  width: 199px;
+  left: 77.7%;
+  top: 21.7%;
+  border-radius: 50%;
+  position: absolute;
+  
+}
+
+.circle2 {
+  opacity: 0.6;
+  height: 320px;
+  width: 320px;
+  left: 19.59%;
+  top: 47.4%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle3 {
+  opacity: 0.6;
+  left: 60%;
+  top: 75%;
+  position: absolute;
+  width: 400px;
+  height: 190px;
+  border-radius: 100rem 100rem 0 0;
+}
+
+.headertext{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+
+  color: var(--almost_black);
+}
+
+.hometext1{
+  position: absolute;
+  left: 35%;
+  top: 25%;
+}
+
+.hometext2{
+  position: absolute;
+  top: 25%;
+  left: 49.5%;
+}
+
+.hometext3{
+  position: absolute;
+  left: 59%;
+  top: 25%;
+}
+.orangetext {
+  color: var(--orange);
+}
+
+.searchtext1{
+  position: absolute;
+  left: 35%;
+  top: 75%;
+}
+
+.searchtext2{
+  position: absolute;
+  top: 75%;
+  left: 55.5%;
+}
+
+.searchtext3{
+  position: absolute;
+  left: 62.5%;
+  top: 75%;
+}
+
+.searchbar{
+  position: absolute;
+  width: 45%;
+  left: 35%;
+  top: 82%;
+  height: 40px;
+  font-size: 24px;
+  border-radius: 20px;
+  border: 5px solid var(--grey);
+  background-color: white;
+}
