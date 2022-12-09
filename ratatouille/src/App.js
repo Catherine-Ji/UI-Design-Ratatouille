@@ -1,35 +1,49 @@
 import logo from './logo.svg';
 import './App.css';
 import SideNavBar from './SideNavBar';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 import Home_newUser from './pages/Home_newUser';
 import Lessons from './pages/Lessons';
 import Profile from './pages/Profile';
 import Ratatouillify from './pages/Ratatouillify';
 import Logo from './Logo_orange.png';
 
-function App() {
+export default function App() {
+  const navigate = useNavigate();
+
+  const navigateToHome = () => {
+    navigate('/home');
+  };
+
+  const navigateToProfile = () => {
+    navigate('/profile');
+  };
+
+  const navigateToLessons = () => {
+    navigate('/lessons');
+  }
+
+  const navigateToRatatouillify = () => { 
+    navigate('/ratatouillify');
+  }
+
   return (
-    // <Router >
-    //    <img src="public/Logo_orange.png"></img>
-    //   <SideNavBar/>
-    //   <Routes>
-    //     <Route path="/home" element={<Home_newUser/>}/>
-    //     <Route path='/profile' element={<Profile/>}/>
-    //     <Route path="/lessons" element={<Lessons/>}/>
-    //     <Route path="/ratatouillify" element={<Ratatouillify/>}/>
-    //   </Routes>
-    // </Router>
     <div class="row">
       <div class="column left">
         <img src={Logo} class='smallLogo'></img>
         <div class="container">
           <i class="fa fa-solid fa-user user" style={{ fontSize: '2em' }} />
           <div class="btn-group">
-            <button>Home</button>
-            <button>Profile</button>
-            <button>Lessons</button>
-            <button>Ratatouillify</button>
+            <button onClick={navigateToHome}>Home</button>
+            <button onClick={navigateToProfile}>Profile</button>
+            <button onClick={navigateToLessons}>Lessons</button>
+            <button onClick={navigateToRatatouillify}>Ratatouillify</button>
+            <Routes>
+              <Route path="/home" element={<Home_newUser/>}/>
+              <Route path='/profile' element={<Profile/>}/>
+              <Route path="/lessons" element={<Lessons/>}/>
+              <Route path="/ratatouillify" element={<Ratatouillify/>}/>
+            </Routes>
           </div>
         </div>
       </div>
@@ -48,5 +62,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
