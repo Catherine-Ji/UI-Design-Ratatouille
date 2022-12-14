@@ -321,6 +321,18 @@ img {
   background-color: white;
 }
 
+.searchbartop{
+  position: absolute;
+  width: 45%;
+  left: 35%;
+  top: 10%;
+  height: 40px;
+  font-size: 24px;
+  border-radius: 20px;
+  border: 5px solid var(--grey);
+  background-color: white;
+}
+
 .loginpage{
   background-color: var(--orange);
   height: 100vh;
