@@ -260,6 +260,16 @@ img {
   color: var(--almost_black);
 }
 
+.headertext_white{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 44px;
+  text-align: center;
+  color: white;
+}
+
 .hometext1{
   position: absolute;
   left: 35%;
@@ -309,4 +319,20 @@ img {
   border-radius: 20px;
   border: 5px solid var(--grey);
   background-color: white;
+}
+
+.loginpage{
+  background-color: var(--orange);
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+}
+
+.extraLargeLogo{
+  height: 18%;
+  width: 40.2%;
+  position: center;
+  display: block;
+  padding-left: 30%;
+  padding-top: 5%;
 }

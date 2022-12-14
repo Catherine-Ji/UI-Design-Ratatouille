@@ -1,40 +1,21 @@
 import '../App.css';
-import {Routes, Route, useNavigate} from 'react-router-dom';
-import Lessons from './Lessons';
-import Profile from './Profile';
-import Ratatouillify from './Ratatouillify';
+import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
 
 function Home_newUser() {
-    const navigate = useNavigate();
-
-  const navigateToProfile = () => {
-    navigate('/profile');
-  };
-
-  const navigateToLessons = () => {
-    navigate('/lessons');
-  }
-
-  const navigateToRatatouillify = () => { 
-    navigate('/ratatouillify');
-  }
+    let navigate = useNavigate();
     return (
-        <div class="row">
+    <div class="row">
       <div class="column left">
         <img src={Logo} class='smallLogo'></img>
         <div class="container">
           <i class="fa fa-solid fa-user user" style={{ fontSize: '2em' }} />
           <div class="btn-group">
+            <button onClick={() => {navigate("/login-landing")}}> Login </button>
             <button >Home</button>
-            <button onClick={navigateToProfile}>Profile</button>
-            <button onClick={navigateToLessons}>Lessons</button>
-            <button onClick={navigateToRatatouillify}>Ratatouillify</button>
-            <Routes>
-              <Route path='/profile' element={<Profile/>}/>
-              <Route path="/lessons" element={<Lessons/>}/>
-              <Route path="/ratatouillify" element={<Ratatouillify/>}/>
-            </Routes>
+            <button onClick={() => {navigate("/profile");}}>Profile</button>
+            <button onClick={() => {navigate("/lessons");}}>Lessons</button>
+            <button onClick={() => {navigate("/ratatouillify");}}>Ratatouillify</button>
           </div>
         </div>
       </div>
