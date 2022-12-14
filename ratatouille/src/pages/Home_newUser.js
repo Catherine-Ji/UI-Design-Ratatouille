@@ -29,7 +29,9 @@ function Home_newUser() {
         <button class='lessoncard'>lesson card</button>
         <span className='headertext searchtext1' >Get help with something</span><span class='headertext searchtext2 orangetext'> &nbsp; specifc</span><span class='headertext searchtext3'>...</span>
         {/* search bar */}
-        <input type='text' placeholder='Search...' class='searchbar'></input>
+        <form onSubmit={()=> {navigate("/search");}}>
+          <input type='text' placeholder='Search...' class='searchbar'></input>
+        </form>
       </div>
     </div>
   );
