@@ -22,7 +22,7 @@ function Search(){
             </div>
         </div><div class="column right">
                 <form onSubmit={() => { navigate("/search"); } }>
-                    <input type='text' placeholder='Search...' class='searchbar'></input>
+                    <input type='text' placeholder='Search...' class='searchbartop'></input>
                 </form>
             </div></>
   );
