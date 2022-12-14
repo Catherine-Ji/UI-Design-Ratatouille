@@ -348,3 +348,9 @@ img {
   padding-left: 30%;
   padding-top: 5%;
 }
+
+.lessontext1{
+  position: absolute;
+  left: 25%;
+  top: 10%;
+}
