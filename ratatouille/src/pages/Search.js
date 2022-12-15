@@ -6,14 +6,37 @@ import { useState } from 'react';
 function Search(){
     let navigate = useNavigate();
     const [val, setVal] = useState("")
+    const [key, setKey] = useState("")
+
+
+    const reciepes = [
+
+        {name: "Omelete"},
+        {name: "Sausage"},
+        {name: "Egg"},
+        {name: "Burger"}
+    ]
     
-    const enter = () =>{
-        //add search key and results
-        alert(val)
+    const enter=(e)=> {
+        e.preventDefault();
+        setKey(val)
     }
+
     const change = event => {
+        event.preventDefault();
         setVal(event.target.value)
     }
+    
+    
+    
+    if (key.length > 0) {
+        reciepes.filter((recipe) => {
+            return recipe.name.match(key)
+        });
+    }
+    
+    
+    
     return (
     <><div class="row">
             <div class="column left">
@@ -30,9 +53,22 @@ function Search(){
                 </div>
             </div>
         </div><div class="column right">
-                <form onSubmit={ enter }>
+                <form onSubmit={enter}>
                     <input onChange ={change} type='text' placeholder='Search...' value={val} class='searchbartop'></input>
                 </form>
+                <span className='headertext searchkey'>{key}</span>
+                <table>
+                    <tr>
+                        <th>recipe</th>
+                    </tr>
+                    {reciepes.map(function (recipe) {
+                        <div>
+                            <tr>
+                                <td>{recipe.name}</td>
+                            </tr>
+                        </div>;
+                    })}
+                </table>
             </div></>
   );
 }

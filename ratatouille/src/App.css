@@ -333,6 +333,11 @@ img {
   background-color: white;
 }
 
+.searchkey{
+  position: absolute;
+  left: 36%;
+  top: 17%;
+}
 .loginpage{
   background-color: var(--orange);
   height: 100vh;
@@ -354,3 +359,4 @@ img {
   left: 25%;
   top: 10%;
 }
+
