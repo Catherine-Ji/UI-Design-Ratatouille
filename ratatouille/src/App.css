@@ -103,6 +103,10 @@ img {
   font-size: 150rem;
 }
  */
+.li:before {
+  content:”\00A3″; font-family: “Font Awesome 5 Free“; font-weight: 900; 
+}
+
  :root {
   --orange: #E97F37;
   --yellow: #f7b32b;
@@ -328,11 +332,116 @@ img {
   align-items: center;
 }
 
-.extraLargeLogo{
-  height: 18%;
+.extraLargeLogo_landing{
+  height: 20%;
+  width: 40.2%;
+  position: center;
+  display: block;
+  padding-left: 30%;
+  padding-top: 10%;
+}
+
+.extraLargeLogo_login{
+  height: 20%;
   width: 40.2%;
   position: center;
   display: block;
   padding-left: 30%;
   padding-top: 5%;
+}
+
+.loginbtn_white{
+  background-color: white;
+  color: var(--grey);
+  font-weight: bold;
+  border: 3px solid var(--grey);
+  border-radius: 20px;
+  height: 4.88%;
+  width: 20.8%;
+  font-size: 24px;
+  position: absolute;
+  left: 40%;
+  top: 60%;
+}
+
+.loginbtn_white:hover {
+  box-shadow: white 0px 0px 20px;
+}
+
+.loginbtn_grey{
+  background-color: var(--grey);
+  color: var(--almost_white);
+  font-weight: bold;
+  border: 3px solid var(--almost_white);
+  border-radius: 20px;
+  height: 4.88%;
+  width: 20.8%;
+  font-size: 24px;
+  position: absolute;
+  left: 40%;
+  top: 70%;
+}
+
+.loginbtn_grey:hover {
+  box-shadow: white 0px 0px 20px;
+}
+
+.loginlandingtext{
+  text-align: center;
+  top: 50%;
+}
+
+.login-field-wrapper {
+  align-items: center;
+  margin: 10px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.login-field-icon {
+  left: 380px;
+  top: 0;
+  font-size: 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey);
+  position: absolute;
+}
+
+.login-input {
+  height: 70px;
+  box-sizing: border-box;
+  padding-left: 5rem;
+  align-items: center;
+  margin: 10px auto;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  display: flex;
+  width: 55.6%;
+  border-radius: 10px;
+  border-color: var(--grey);
+  font-size: 24px;
+  color: var(--grey);
+  font-family: 'Nunito', sans-serif;
+}
+
+.btn-login{
+  top: auto;
+  margin-top: 35px;
+}
+
+.link {
+  color: white;
+  font-size: 24px;
+  left: 45%;
+  position: absolute;
+  top: 85%;
+  font-family: 'Nunito', sans-serif;
 }
