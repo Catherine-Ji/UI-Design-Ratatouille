@@ -284,7 +284,7 @@ img {
 
 .hometext1{
   position: absolute;
-  left: 35%;
+  left: 34%;
   top: 25%;
 }
 
@@ -294,37 +294,50 @@ img {
   left: 49.5%;
 }
 
+.home-newUser-text2{
+  position: absolute;
+  top: 25%;
+  left: 48.5%;
+}
+
 .hometext3{
   position: absolute;
   left: 59%;
   top: 25%;
 }
+
+.home-newUser-text3{
+  position: absolute;
+  top: 25%;
+  left: 58%;
+}
+
 .orangetext {
   color: var(--orange);
 }
 
 .searchtext1{
   position: absolute;
-  left: 35%;
+  left: 34%;
   top: 75%;
 }
 
 .searchtext2{
   position: absolute;
   top: 75%;
-  left: 55.5%;
+  left: 54.5%;
 }
 
 .searchtext3{
   position: absolute;
-  left: 62.5%;
+  left: 61.5%;
   top: 75%;
 }
 
-.searchbar{
+.searchbar {
   position: absolute;
-  width: 45%;
-  left: 35%;
+  width: 45.5%;
+  left: 34%;
   top: 82%;
   height: 40px;
   font-size: 24px;
@@ -473,7 +486,7 @@ img {
 .link {
   color: white;
   font-size: 24px;
-  left: 45%;
+  left: 48.5%;
   position: absolute;
   top: 85%;
   font-family: 'Nunito', sans-serif;
