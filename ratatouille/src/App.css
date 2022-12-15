@@ -469,21 +469,97 @@ img {
 .ratatouillify-content{
 /*  background-color:red;*/
   padding-top: 20px;
-  padding-left: 50px;
+  padding-left: 150px;
   padding-right: 50px;
 
 
 }
 .ratatouillify-title{
-/*  background-color: blue;*/
+font-family: 'Open Sans';
+font-style: normal;
 
 
 }
 .ratatouillify-upload{
   color: var(--orange);
+  font-family: 'Open Sans';
+font-style: normal;
+}
 
+.uploadimage{
+  align-items: center;
+  margin-top: 5px;
+  height:50px;
+
+
+}
+
+
+#upload-btn{
+   border: 5px dashed rgba(126, 127, 154, 0.5);
+   border-radius: 25px;
+   width: 650px;
+   height: 150px;
+  cursor: pointer;
+
+}
+
+.upload-btn-content{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  text-align: center;
+
+}
+
+.p1{
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+align-items: center;
+text-align: center;
+white-space: nowrap;
+margin:0
+}
+
+.p2{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 19px;
+  margin:0
+}
+
+#browse{
+  color: var(--orange);
+}
+.ratatouillify-manually-input{
+  color: var(--orange);
+  font-family: 'Open Sans';
+  font-style: normal;
+}
+
+#manual-textarea{
+  border: 5px solid #7E7F9A;
+  border-radius: 25px;
+  width: 620px;
+  height: 100px;
+  color: var(--grey);
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+
+}
+
+.ratatouillify-submit{
+  color: var(--orange);
+  font-family: 'Open Sans';
+  font-style: normal;
 }
 
 #or{
   color:var(--grey);
+  font-family: 'Open Sans';
+  font-style: normal;
 }
