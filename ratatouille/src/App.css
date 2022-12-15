@@ -345,6 +345,11 @@ img {
   background-color: white;
 }
 
+.searchkey{
+  position: absolute;
+  left: 36%;
+  top: 17%;
+}
 .loginpage{
   background-color: var(--orange);
   height: 100vh;
@@ -369,6 +374,14 @@ img {
   padding-left: 30%;
   padding-top: 5%;
 }
+
+
+.lessontext1{
+  position: absolute;
+  left: 25%;
+  top: 10%;
+}
+
 
 .loginbtn_white{
   background-color: white;
@@ -487,3 +500,4 @@ img {
 #or{
   color:var(--grey);
 }
+
