@@ -12,7 +12,7 @@ function Home_newUser() {
           <i class="fa fa-solid fa-user user" style={{ fontSize: '2em' }} />
           <div class="btn-group">
             <button onClick={() => {navigate("/login-landing")}}> Login </button>
-            <button >Home</button>
+            <button onClick={() => {navigate("/")}}>Home</button>
             <button onClick={() => {navigate("/profile");}}>Profile</button>
             <button onClick={() => {navigate("/lessons");}}>Lessons</button>
             <button onClick={() => {navigate("/ratatouillify");}}>Ratatouillify</button>
