@@ -10,7 +10,7 @@ export default function Login(){
             <h1 className='headertext_white'> Welcome Back, Chef! </h1>
             <div class="login-field-wrapper">
                 <span class="login-field-icon">
-                    <i class="fa-solid fa-at"></i>
+                    <i class="fa-regular fa-circle-user"></i>
                 </span>
                 <input class="login-input" type="text" placeholder='Email'></input>
             </div> 

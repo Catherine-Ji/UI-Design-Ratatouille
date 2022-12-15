@@ -121,7 +121,6 @@ img {
 .column {
   float: left;
   height: 100vh;
-  overflow: auto;
 }
 
 .user {
@@ -134,18 +133,13 @@ img {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-  position: fixed;
 }
 
 .right {
   width: 86.1%;
   background-color: white;
-  box-shadow: inset 12px 0 10px -2px rgb(116 116 116 / 40%);
+  box-shadow: inset 12px 0 10px -2px rgba(116, 116, 116, 0.4);
   text-align: center;
-  height: 100vh;
-  overflow-y: auto;
-  position: absolute;
-  left: 13.9%;
 }
 
 .row::after {
@@ -233,8 +227,8 @@ img {
   opacity: 0.6;
   height: 199px;
   width: 199px;
-  left: 69.7%;
-  top: 20.7%;
+  left: 77.7%;
+  top: 21.7%;
   border-radius: 50%;
   position: absolute;
   
@@ -244,7 +238,7 @@ img {
   opacity: 0.6;
   height: 320px;
   width: 320px;
-  left: 11.59%;
+  left: 19.59%;
   top: 47.4%;
   border-radius: 50%;
   position: absolute;
@@ -256,8 +250,8 @@ img {
   top: 75%;
   position: absolute;
   width: 400px;
-  height: 400px;
-  border-radius: 50%;
+  height: 190px;
+  border-radius: 100rem 100rem 0 0;
 }
 
 .headertext{
@@ -282,19 +276,19 @@ img {
 
 .hometext1{
   position: absolute;
-  left: 23%;
+  left: 35%;
   top: 25%;
 }
 
 .hometext2{
   position: absolute;
   top: 25%;
-  left: 40%;
+  left: 49.5%;
 }
 
 .hometext3{
   position: absolute;
-  left: 51%;
+  left: 59%;
   top: 25%;
 }
 .orangetext {
@@ -303,26 +297,26 @@ img {
 
 .searchtext1{
   position: absolute;
-  left: 23%;
+  left: 35%;
   top: 75%;
 }
 
 .searchtext2{
   position: absolute;
   top: 75%;
-  left: 47%;
+  left: 55.5%;
 }
 
 .searchtext3{
   position: absolute;
-  left: 55%;
+  left: 62.5%;
   top: 75%;
 }
 
 .searchbar{
   position: absolute;
-  width: 53%;
-  left: 23%;
+  width: 45%;
+  left: 35%;
   top: 82%;
   height: 40px;
   font-size: 24px;
@@ -462,8 +456,4 @@ img {
   position: absolute;
   top: 85%;
   font-family: 'Nunito', sans-serif;
-}
-
-.loginlink{
-  left: 48%;
 }
