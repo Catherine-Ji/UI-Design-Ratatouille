@@ -32,6 +32,10 @@ function Home_newUser() {
         <form onSubmit={()=> {navigate("/search");}}>
           <input type='text' placeholder='Search...' class='searchbar'></input>
         </form>
+        <span className='headertext rathometext1' >Upload a recipt to be </span><span className='headertext rathometext2 orangetext'> &nbsp; Ratatouilli-fied</span><span className='headertext rathometext3'>...</span>
+        <button className="orangeButton" onClick={() => {navigate("/ratatouillify");}}>Ratatouillify</button>
+        <span className="small-text-home">Don’t see the recipe you’re looking for?</span>
+        <span className='small-text-home'>We can Ratatouillify it and help you create an original lesson plan!</span>
       </div>
     </div>
   );
