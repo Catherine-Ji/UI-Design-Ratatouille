@@ -5,7 +5,7 @@ import Logo from '../Logo_orange.png';
 function Ratatouillify(){
     let navigate = useNavigate();
     return(
-     <div class="row">
+    <div class="row">
       <div class="column left">
         <img src={Logo} class='smallLogo'></img>
         <div class="container">
@@ -19,8 +19,8 @@ function Ratatouillify(){
           </div>
         </div>
       </div>
-
-      <div class="ratatouillify-content">
+      <div class="column right-ratatouillify">
+        <div class="ratatouillify-content">
         <div class="ratatouillify-title"> 
             <h1>Ratatouilli-fy a recipe and create a custom lesson plan </h1>
         </div>
@@ -41,10 +41,8 @@ function Ratatouillify(){
         </div>
 
       </div>
-
-      
-
-    </div>     
+      </div>
+    </div>
 
     )
 }
