@@ -1,10 +1,19 @@
 import '../App.css';
 import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
-
+import { useState } from 'react';
 
 function Search(){
     let navigate = useNavigate();
+    const [val, setVal] = useState("")
+    
+    const enter = () =>{
+        //add search key and results
+        alert(val)
+    }
+    const change = event => {
+        setVal(event.target.value)
+    }
     return (
     <><div class="row">
             <div class="column left">
@@ -21,8 +30,8 @@ function Search(){
                 </div>
             </div>
         </div><div class="column right">
-                <form onSubmit={() => { navigate("/search"); } }>
-                    <input type='text' placeholder='Search...' class='searchbartop'></input>
+                <form onSubmit={ enter }>
+                    <input onChange ={change} type='text' placeholder='Search...' value={val} class='searchbartop'></input>
                 </form>
             </div></>
   );
