@@ -11,14 +11,15 @@ import Login_landing from './pages/Login_landing';
 import Search from './pages/Search';
 import Login from './pages/Login';
 import Create_account from './pages/Create_account';
-import Logo from './Logo_orange.png';
+import Home_returnUser from './pages/Home_returnUser';
 
 export default function App() {
   return (
       <Router>
         <Routes>
           <Route path="/" element={<Home_newUser />}/>
-          <Route path="/home" element={<Home_newUser />}/>
+          <Route path="/home-newUser" element={<Home_newUser />}/>
+          <Route path="/home" element={<Home_returnUser />}/>
           <Route path='/profile' element={<Profile />}/>
           <Route path="/lessons" element={<Lessons />}/>
           <Route path="/ratatouillify" element={<Ratatouillify />}/>
