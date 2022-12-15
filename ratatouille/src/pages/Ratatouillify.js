@@ -1,7 +1,8 @@
 import '../App.css';
 import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
-import Upload from '../upload_image.png';
+import UploadImage from '../upload_image.png';
+import Microphone from '../microphone.png'
 
 function Ratatouillify(){
     let navigate = useNavigate();
@@ -27,18 +28,18 @@ function Ratatouillify(){
         </div>
         <div class="ratatouillify-upload">
             <h1>Upload </h1>
-            <button id="upload-btn" onClick={() => {navigate("/upload");}}>  <div class="upload-btn-content"> <img src={Upload} alt="upload cloud" class='uploadimage'></img> <p class="p1">Drop your recipe file here or  browse </p> <p class="p2"> Only .txt, .mov, and .mp4 files are supported </p> </div> </button>
+            <button id="upload-btn" onClick={() => {navigate("/upload");}}>  <div class="upload-btn-content"> <img src={UploadImage} alt="upload cloud" class='uploadimage'></img> <p class="p1">Drop your recipe file here or  browse </p> <p class="p2"> Only .txt, .mov, and .mp4 files are supported </p> </div> </button>
         </div>
         <h1 id="or"> OR </h1>
 
         <div class="ratatouillify-manually-input">
             <h1> Manually Input </h1>
-            <textarea id="manual-textarea" rows="4" cols="50"> Type or paste your recipe here...</textarea>
+            <textarea id="manual-textarea" rows="4" cols="50"> Type or paste your recipe here...</textarea> <img src={Microphone} alt="microphone icon for verbally uploading a recipe" class="microphoneimage"></img>
         </div>
 
         <div class="ratatouillify-submit">
             <h1> Submit </h1>
-            <button> Ratatouilify </button>
+            <button class="ratatouillify-submit-btn"> Ratatouilify </button>
         </div>
 
       </div>
