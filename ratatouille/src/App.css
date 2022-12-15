@@ -457,3 +457,11 @@ img {
   top: 85%;
   font-family: 'Nunito', sans-serif;
 }
+
+.ratatouillify-upload{
+  color: var(--orange)
+}
+
+#or{
+  color:var(--grey);
+}
