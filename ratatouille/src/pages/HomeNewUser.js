@@ -3,6 +3,9 @@ import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
 
 import { useState } from 'react';
+import lesson_icons from "../lessoncard-icons.png";
+import omelet from "../omelet.jpeg";
+
 
 
 function Home_newUser() {
@@ -30,9 +33,6 @@ function Home_newUser() {
 }
 
 
-
-import lesson_icons from "../lessoncard-icons.png";
-import omelet from "../omelet.jpeg";
 
 
     return (
