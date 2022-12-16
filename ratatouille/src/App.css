@@ -586,20 +586,18 @@ img {
 }
 
 .extraLargeLogo_landing{
-  height: 20%;
-  width: 40.2%;
-  position: center;
+  height: 40%;
+  width: auto;
   display: block;
-  padding-left: 30%;
+  padding-left: 33%;
   padding-top: 10%;
 }
 
 .extraLargeLogo_login{
-  height: 20%;
-  width: 40.2%;
-  position: center;
+  height: 30%;
+  width: auto;
   display: block;
-  padding-left: 30%;
+  padding-left: 33%;
   padding-top: 5%;
 }
 
