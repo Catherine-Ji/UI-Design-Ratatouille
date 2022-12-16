@@ -34,8 +34,6 @@ function Home_newUser() {
 import lesson_icons from "../lessoncard-icons.png";
 import omelet from "../omelet.jpeg";
 
-function Home_newUser() {
-    let navigate = useNavigate();
 
     return (
     <div class="row">
@@ -72,7 +70,7 @@ function Home_newUser() {
         </button>
         <span className='headertext searchtext1' >Get help with something</span><span class='headertext searchtext2 orangetext'> &nbsp; specifc</span><span class='headertext searchtext3'>...</span>
         {/* search bar */}
-        <form onSubmit={()=> {submitsearch} className="home-search-wrapper">
+        <form onSubmit={submitsearch} className="home-search-wrapper">
           <span class="home-search-icon">
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
