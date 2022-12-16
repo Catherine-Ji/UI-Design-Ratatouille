@@ -1,9 +1,34 @@
 import '../App.css';
 import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
+import { useState } from 'react';
+
 
 function Home_newUser() {
-    let navigate = useNavigate();
+  let navigate = useNavigate();
+  const [searchkey, setSearch] = useState("");
+  const [val, setVal] = useState("");
+
+  const submitsearch=(event)=>{
+    event.preventDefault();
+    setSearch(val);
+    console.log(val)
+    console.log(searchkey)
+    navigate("/search",{
+      state: {
+        searchKey: val
+      }
+    });
+  }
+
+
+  const change = event => {
+    event.preventDefault();
+    setVal(event.target.value)
+    console.log(val)
+}
+
+
     return (
     <div class="row">
       <div class="column left">
@@ -29,8 +54,8 @@ function Home_newUser() {
         <button class='lessoncard'>lesson card</button>
         <span className='headertext searchtext1' >Get help with something</span><span class='headertext searchtext2 orangetext'> &nbsp; specifc</span><span class='headertext searchtext3'>...</span>
         {/* search bar */}
-        <form onSubmit={()=> {navigate("/search");}}>
-          <input type='text' placeholder='Search...' class='searchbar'></input>
+        <form onSubmit={submitsearch}>
+          <input type='text' onChange = {change} placeholder='Search...' class='searchbar'></input>
         </form>
       </div>
     </div>
