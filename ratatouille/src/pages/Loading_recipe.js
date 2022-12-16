@@ -2,13 +2,16 @@ import '../App.css';
 import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
 import {Helmet} from "react-helmet";
+import People_cooking from '../People_cooking.png';
 
 function Loading_Recipe(){
 	let navigate = useNavigate();
 
 	return( 
     <div class="row">
-
+      <Helmet>
+      	<meta http-equiv="refresh" content="1;url=./lesson-ready/" />
+      </Helmet> 
       <div class="column left">
         <img src={Logo} class='smallLogo'></img>
         <div class="container">
@@ -22,18 +25,23 @@ function Loading_Recipe(){
           </div>
         </div>
       </div>
+      
       <div class="column right-ratatouillify">
         <div class="ratatouillify-content">
-        <div class="ratatouillify-title"> 
-            <h1>Ratatouilli-fy a recipe and create a custom lesson plan! </h1>
+       		<div class="loading-recipe-content">
+        		<div class="ratatouillify-title"> 
+            	<h1>Thanks for helping us grow our library of lessons! </h1>
+            	</div>
+
+            	<h2>Please wait a moment while we Ratatouilli-fy your recipe and prepare an original lesson plan... </h2>
+            	<img src={People_cooking} alt="people in the kitchen cooking" class='people-cooking'></img> 
+            	<h2> cooking something up just for you... </h2>
+
         </div>
 
 
 
-        <div class="ratatouillify-submit">
-            <h1> Submit </h1>
-            <button class="ratatouillify-submit-btn"> Ratatouilify </button>
-        </div>
+
 
       </div>
       </div>

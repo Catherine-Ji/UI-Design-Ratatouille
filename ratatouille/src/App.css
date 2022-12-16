@@ -535,11 +535,7 @@ img {
 }
 
 .ratatouillify-title{
-  font-family: 'Open Sans';
-  font-style: normal;
   padding-bottom: 20px;
-
-
 
 }
 .ratatouillify-upload{
@@ -702,4 +698,10 @@ margin:0
   color: var(--almost_white);
   width: 200px;
 }
+
+.people-cooking{
+  width: 740px;
+}
+
+
 
