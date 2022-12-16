@@ -29,9 +29,24 @@ export default function Home_returnUser() {
         <button class='lessoncard'>lesson card</button>
         <span className='headertext searchtext1' >Get help with something</span><span class='headertext searchtext2 orangetext'> &nbsp; specifc</span><span class='headertext searchtext3'>...</span>
         {/* search bar */}
-        <form onSubmit={()=> {navigate("/search");}}>
+        <form onSubmit={()=> {navigate("/search");} } className="home-search-wrapper">
+          <span class="home-search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
           <input type='text' placeholder='Search...' class='searchbar'></input>
         </form>
+        <div className="search-suggestions">
+          <span className="small-text-home search-title">Top Suggested</span>
+          <span className="small-text-home search-hint">easy recipes</span>
+          <span className="small-text-home search-hint">knife skills</span>
+          <span className="small-text-home search-hint">pasta recipes</span>
+        </div>
+        <span className='headertext rathometext1' >Upload a recipt to be </span><span className='headertext rathometext2 orangetext'> &nbsp; Ratatouilli-fied</span><span className='headertext rathometext3'>...</span>
+        <button className="orangeButton" onClick={() => {navigate("/ratatouillify");}}>Ratatouillify</button>
+        <div className="rat-home-text">
+          <h3 className="small-text-home">Don’t see the recipe you’re looking for?</h3>
+          <h3 className='small-text-home'>We can Ratatouillify it and help you create an original lesson plan!</h3>
+        </div>
       </div>
     </div>
   );

@@ -222,6 +222,8 @@ img {
   padding: 125px 330px;
   border-radius: 25px;
   margin: 7%;
+  position: absolute;
+  left: 16%;
 }
 
 .lessoncard:hover {
@@ -245,6 +247,7 @@ img {
   top: 20.7%;
   border-radius: 50%;
   position: absolute;
+  z-index: 900;
   
 }
 
@@ -309,13 +312,13 @@ img {
 .home-newUser-text2{
   position: absolute;
   top: 25%;
-  left: 48.5%;
+  left: 40%;
 }
 
 .home-newUser-text3{
   position: absolute;
   top: 25%;
-  left: 58%;
+  left: 51%;
 }
 
 .orangetext {
@@ -342,33 +345,130 @@ img {
 
 .rathometext1{
   position: absolute;
-  left: 34%;
-  top: 95%;
+  left: 23%;
+  top: 100%;
 }
 
 .rathometext2{
   position: absolute;
-  top: 95%;
-  left: 54.5%;
+  top: 100%;
+  left: 43.5%;
 }
 
 .rathometext3{
   position: absolute;
-  left: 61.5%;
-  top: 95%;
+  left: 60%;
+  top: 100%;
 }
 
 .searchbar {
-  position: absolute;
-  width: 53%;
-  left: 23%;
-  top: 82%;
-  height: 40px;
-  font-size: 24px;
+  height: 70px;
+  box-sizing: border-box;
+  padding-left: 3.5rem;
+  align-items: center;
+  margin: 10px auto;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  display: flex;
+  width: 55.6%;
   border-radius: 20px;
-  border: 5px solid var(--grey);
+  border: 10px solid var(--grey);
   background-color: white;
+  font-size: 24px;
+  color: var(--grey);
+  font-family: 'Nunito', sans-serif;
+  border-width: thick;
 }
+
+.home-search-wrapper {
+  left: 1.5%;
+  top: 80%;
+  align-items: center;
+  margin: 10px auto;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98%;
+
+}
+
+.home-search-icon {
+  left: 320px;
+  top: 0;
+  font-size: 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey);
+  position: absolute;
+}
+
+.orangeButton{
+  background-color: var(--orange);
+  color: var(--almost_white);
+  font-weight: bold;
+  border: 3px solid var(--almost_black);
+  left: 43%;
+  border-radius: 20px;
+  position: absolute;
+  width: 14.6%;
+  height: 6.88%;
+  font-size: 24px;
+  position: absolute;
+  top: 108%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.rat-home-text{
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 115%;
+  left: 27.5%;
+}
+
+.small-text-home{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--almost_black);
+}
+
+.search-suggestions{
+  display: table;
+  width: 60%;
+  table-layout: fixed;
+  top: 93%;
+  left: 21%;
+  position: absolute;
+}
+
+.search-hint{
+  display: table-cell;
+  text-align: center;
+  font-family: 'Nunito Sans';
+  color: var(--orange)
+}
+
+.search-title{
+  display: table-cell;
+  text-align: center;
+  font-family: 'Nunito Sans';
+  color: var(--grey)
+}
+
 
 .searchbartop{
   position: absolute;
@@ -510,7 +610,7 @@ img {
 .link {
   color: white;
   font-size: 24px;
-  left: 48.5%;
+  left: 45.5%;
   position: absolute;
   top: 85%;
   font-family: 'Nunito', sans-serif;
