@@ -152,8 +152,12 @@ img {
   width: 86.1%;
   background-color: white;
   box-shadow: inset 12px 0 10px -2px rgba(116, 116, 116, 0.4);
+  overflow: scroll;
 
-
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 
 .row::after {
@@ -520,6 +524,7 @@ img {
   left: 48%;
 }
 
+
 .ratatouillify-content{
 /*  background-color:red;*/
   padding-top: 20px;
@@ -528,6 +533,7 @@ img {
 
 
 }
+
 .ratatouillify-title{
   font-family: 'Open Sans';
   font-style: normal;

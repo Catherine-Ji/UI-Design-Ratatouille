@@ -8,10 +8,7 @@ function Loading_Recipe(){
 
 	return( 
     <div class="row">
-      <Helmet>
-      	<meta http-equiv="refresh" content="3;url=./lesson-ready/" />
 
-      </Helmet> 
       <div class="column left">
         <img src={Logo} class='smallLogo'></img>
         <div class="container">
