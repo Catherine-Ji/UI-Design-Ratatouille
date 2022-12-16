@@ -603,11 +603,7 @@ font-style: normal;
   border-radius: 50%;
 }*/
 
-.recipe-file{
-  color:red;
-  padding-left: 100px;
 
-}
 
 .file-info{
   color:red;
@@ -655,9 +651,12 @@ margin:0
 
 }
 
+.recipe-file{
+
+  width: 600px;
+}
 .microphoneimage{
   width: 50px;
-
 }
 
 .ratatouillify-submit{

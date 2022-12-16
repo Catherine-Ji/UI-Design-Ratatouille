@@ -3,7 +3,7 @@ import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
 import UploadImage from '../upload_image.png';
 import Microphone from '../microphone.png'
-import FileIcon from '../fileicon.png'
+import RecipeFile from '../recipe-file-upload.png'
 import Delete from '../delete-icon.png'
 
 function Upload(){
@@ -30,18 +30,7 @@ function Upload(){
         </div>
         <div class="ratatouillify-upload">
             <h1>Upload </h1>
-            <button id="uploaded-btn" >  
-                <div class="uploaded-btn-content"> 
-
-                    <img src={FileIcon} alt="file icon" class='fileimage'></img> 
-                    <span class="recipe-file"> omeleterecipe.txt </span> 
-                    <br>
-                    </br>  
-                    <span class="file-info" >7.4MB 100% </span> 
-
-
-                </div> 
-            </button>
+            <img src={RecipeFile} alt="omlete recipe file has been sucessfully uploaded" class="recipe-file"></img>
            <a href="../ratatouillify"> <img src={Delete} alt="microphone icon for verbally uploading a recipe" class="microphoneimage"></img> </a>
            
 

@@ -24,15 +24,10 @@ function Lesson_Ready(){
       <div class="column right-ratatouillify">
         <div class="ratatouillify-content">
         <div class="ratatouillify-title"> 
-            <h1>LESSON READY</h1>
+            <h1>Your new lesson is ready!</h1>
         </div>
 
 
-
-        <div class="ratatouillify-submit">
-            <h1> Submit </h1>
-            <button class="ratatouillify-submit-btn"> Ratatouilify </button>
-        </div>
 
       </div>
       </div>
