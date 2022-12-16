@@ -63,8 +63,6 @@ function Home_newUser() {
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
           <input type='text' onChange = {change} placeholder='Search...' class='searchbar'></input>
-        <form onSubmit={()=> {navigate("/search");}}>
-          <input type='text' placeholder='Search...' class='searchbar'></input>
         </form>
         <span className='headertext rathometext1' >Upload a recipt to be </span><span className='headertext rathometext2 orangetext'> &nbsp; Ratatouilli-fied</span><span className='headertext rathometext3'>...</span>
         <button className="orangeButton" onClick={() => {navigate("/ratatouillify");}}>Ratatouillify</button>
