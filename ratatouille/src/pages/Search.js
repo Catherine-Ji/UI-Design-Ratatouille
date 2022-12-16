@@ -1,13 +1,25 @@
 import '../App.css';
-import {useNavigate} from 'react-router-dom';
+//import List from './List';
+import {useLocation, useNavigate, useNavigation} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import React, { Component } from 'react';
+import { StyleSheet, Text, View } from 'react';
 
-function Search(){
+
+
+function Search({}){
     let navigate = useNavigate();
-    const [val, setVal] = useState("")
-    const [key, setKey] = useState("")
-
+    
+    const [val, setVal] = useState("");
+    const [key, setKey] = useState("");
+    const location = useLocation();
+    console.log(location.state); 
+    console.log(location.state.searchKey); 
+    useEffect(() =>{
+        setKey(location.state.searchKey); 
+    }, [])
+    console.log(key)
 
     const reciepes = [
 
@@ -15,30 +27,32 @@ function Search(){
         {name: "Sausage"},
         {name: "Egg"},
         {name: "Burger"}
-    ]
+    ];
     
+    const [results,setResults] = useState(reciepes);
+
+
     const enter=(e)=> {
         e.preventDefault();
         setKey(val)
-    }
+
+/*         if (key.length > 0) {
+            const found = reciepes.filter((recipe)=>{
+                return recipe.name.toLowerCase().startsWith(key.toLowerCase());
+            });
+            setResults(found)
+        } */
+    } 
 
     const change = event => {
         event.preventDefault();
         setVal(event.target.value)
     }
-    
-    
-    
-    if (key.length > 0) {
-        reciepes.filter((recipe) => {
-            return recipe.name.match(key)
-        });
-    }
-    
+
     
     
     return (
-    <><div class="row">
+    <div class="row">
             <div class="column left">
                 <img src={Logo} class='smallLogo'></img>
                 <div class="container">
@@ -52,25 +66,36 @@ function Search(){
                     </div>
                 </div>
             </div>
-        </div><div class="column right">
-                <form onSubmit={enter}>
-                    <input onChange ={change} type='text' placeholder='Search...' value={val} class='searchbartop'></input>
-                </form>
-                <span className='headertext searchkey'>{key}</span>
-                <table>
-                    <tr>
-                        <th>recipe</th>
-                    </tr>
-                    {reciepes.map(function (recipe) {
-                        <div>
-                            <tr>
-                                <td>{recipe.name}</td>
-                            </tr>
-                        </div>;
-                    })}
-                </table>
-            </div></>
-  );
+        <div class="column right">
+                        <br></br><br></br>
+                        <form onSubmit={enter}>
+                            <input onChange ={change} type='text' placeholder='Search...' value={val} class='searchbar'></input>
+                        </form>
+                        <span className='headertext searchkey'>{key}</span>
+                        
+                        <br></br><br></br><br></br>
+
+
+
+                        <div className='results'>
+                                <li key="test" className="list-item">
+                                    <span>TEST</span>
+                                </li>
+
+
+                            {results.map((reciepe) => (
+                                <li key={reciepe.name} className="list-item">
+                                    <div className='item-primary-text'>{reciepe.name}</div>
+                                </li>
+                            ))}
+                        </div>
+                    </div>
+
+
+
+        </div>
+        
+          );
 }
 
 export default Search;
