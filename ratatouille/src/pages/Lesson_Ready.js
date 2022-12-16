@@ -9,7 +9,7 @@ function Lesson_Ready(){
 	return( 
     <div class="row">
       <div class="column left">
-        <img src={Logo} class='smallLogo'></img>
+        <img src={Logo} class='smallLogo' alt='app logo'></img>
         <div class="container">
           <i class="fa fa-solid fa-user user" style={{ fontSize: '2em' }} />
           <div class="btn-group">
