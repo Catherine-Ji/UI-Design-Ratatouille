@@ -927,10 +927,10 @@ margin:0
   margin: 2%;
 }
 
-.lesson-page-skills{
+.tutorial-skills{
   position: absolute;
   width: 60%;
-  top: 20%;
+  top: 25%;
   left: 20%;
 }
 
@@ -942,7 +942,7 @@ margin:0
 .tutorial-header{
   position: absolute;
   left: 20%;
-  top: 22.17%;
+  top: 0;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
@@ -953,9 +953,8 @@ margin:0
 
 .tutorial-equipments{
   overflow-x: scroll;
-  top: 49%;
+  top: 54%;
   position: absolute;
-  background-color: aliceblue;
   height: 180px;
   left: 20%;
   width: 60%;
@@ -963,9 +962,8 @@ margin:0
 
 .tutorial-ingredients{
   overflow-x: scroll;
-  top: 79%;
+  top: 89%;
   position: absolute;
-  background-color: aliceblue;
   height: 200px;
   left: 20%;
   width: 60%;
@@ -987,7 +985,7 @@ margin:0
 .tutorial-exit{
   position: absolute;
   top: 1%;
-  left: 90%;
+  left: 80%;
   height: 150%;
   width: auto;
   color: var(--grey)
@@ -996,4 +994,46 @@ margin:0
 .tutorial-exit:hover{
   color: var(--orange);
 }
+
+.tools-image{
+  width: auto;
+  height: 100%;
+}
+
+.ingredients-image{
+  width: auto;
+  height: 100%;
+}
+
+.tutorial-difficulty{
+  height: 50px;
+  width: auto;
+}
+
+.tutorial-description-bold{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  width: 40px;
+  position: absolute;
+  left: 0;
+  padding-top: 55px;
+}
+
+.tutorial-description{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  width: 100px;
+  position: absolute;
+  left: 38%;
+  padding-top: 55px;
+}
+
 
