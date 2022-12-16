@@ -38,11 +38,6 @@ function Loading_Recipe(){
             	<h2> cooking something up just for you... </h2>
 
         </div>
-
-
-
-
-
       </div>
       </div>
     </div>
