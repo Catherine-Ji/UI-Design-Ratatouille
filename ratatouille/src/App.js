@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import SideNavBar from './SideNavBar';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home_newUser from './pages/Home_newUser';
+import Home_newUser from './pages/HomeNewUser';
 import Lessons from './pages/Lessons';
 import Profile from './pages/Profile';
 import Ratatouillify from './pages/Ratatouillify';
