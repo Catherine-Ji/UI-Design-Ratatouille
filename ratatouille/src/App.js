@@ -12,6 +12,7 @@ import Search from './pages/Search';
 import Login from './pages/Login';
 import Create_account from './pages/Create_account';
 import Home_returnUser from './pages/Home_returnUser';
+import Loading_recipe from './pages/Loading_recipe';
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/create-account" element={<Create_account />}/>
           <Route path="/search" element={<Search />}/>
           <Route path="/upload" element={<Upload />}/>
+          <Route path="/loading-recipe" element={<Loading_recipe />}/>
           <Route path="/*" element={<div>ERROR: Page Not Found</div>} />
         </Routes>
       </Router>
