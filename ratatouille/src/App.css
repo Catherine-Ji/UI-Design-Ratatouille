@@ -152,6 +152,7 @@ img {
   width: 86.1%;
   background-color: white;
   box-shadow: inset 12px 0 10px -2px rgba(116, 116, 116, 0.4);
+  -ms-overflow-style: none;
 
 
 }
@@ -521,8 +522,9 @@ img {
 .ratatouillify-content{
 /*  background-color:red;*/
   padding-top: 20px;
-  padding-left: 150px;
+  padding-left: 350px;
   padding-right: 50px;
+  overflow-y: hidden;
 
 
 }
