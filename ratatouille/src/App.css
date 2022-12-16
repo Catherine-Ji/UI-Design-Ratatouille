@@ -220,14 +220,109 @@ img {
 .lessoncard {
   border: 5px solid var(--grey);
   background-color: white;
-  padding: 125px 330px;
   border-radius: 25px;
   margin: 7%;
+  position: absolute;
+  left: 16%;
+  display: table;
+  table-layout: fixed;
+  width: 55%;
+  height: 40%;
 }
 
 .lessoncard:hover {
   box-shadow: var(--yellow) 0px 0px 20px;
-  padding: 127px 335px;
+}
+
+.lessoncard-cell{
+  color: var(--grey);
+  display: table-cell;
+  width: 50%;
+  height: 100%;
+  align-self: start;
+  position: absolute;
+  left: 0;
+  top:0;
+}
+
+.lessoncard-image-cell{
+  display: table-cell;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top:0;
+}
+
+.lessoncard-image{
+  height: 80%;
+  width: 92%;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  border-radius: 10px;
+}
+
+.headertext-lessoncard{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  color: var(--almost_black);
+  top: 10%;
+  position: absolute;
+  left: 10%;
+}
+
+.difficulty-label{
+  position: absolute;
+  left: 10%;
+  width: 20%;
+  top: 31.8%;
+  bottom: 55.08%;
+  background: rgba(44, 141, 53, 0.2);
+  border-radius: 50px;
+  font-family: 'Open Sans';
+  text-align: center;
+  font-style: normal;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  color: #2C8D35; 
+  text-align: center;
+}
+
+.difficulty-label-text{
+  position: absolute;
+  left: 15%;
+}
+
+.time-label{
+  position: absolute;
+  left: 35%;
+  top: 34%;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--grey);
+}
+
+.lessoncard-icons{
+  height: 40%;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.row{
+  display: table-row;
 }
 
 .yellow {
@@ -246,7 +341,6 @@ img {
   top: 20.7%;
   border-radius: 50%;
   position: absolute;
-  
 }
 
 .circle2 {
@@ -287,6 +381,7 @@ img {
   line-height: 44px;
   text-align: center;
   color: white;
+  padding: 20px 0 25px 0;
 }
 
 .hometext1{
@@ -310,13 +405,12 @@ img {
 .home-newUser-text2{
   position: absolute;
   top: 25%;
-  left: 48.5%;
+  left: 40%;
 }
-
 .home-newUser-text3{
   position: absolute;
   top: 25%;
-  left: 58%;
+  left: 51%;
 }
 
 .orangetext {
@@ -343,32 +437,126 @@ img {
 
 .rathometext1{
   position: absolute;
-  left: 34%;
-  top: 95%;
+  left: 23%;
+  top: 100%;
 }
 
 .rathometext2{
   position: absolute;
-  top: 95%;
-  left: 54.5%;
+  top: 100%;
+  left: 43.5%;
 }
 
 .rathometext3{
   position: absolute;
-  left: 61.5%;
-  top: 95%;
+  left: 60%;
+  top: 100%;
 }
 
 .searchbar {
-  position: absolute;
-  width: 53%;
-  left: 23%;
-  top: 82%;
-  height: 40px;
-  font-size: 24px;
+  height: 70px;
+  box-sizing: border-box;
+  padding-left: 3.5rem;
+  align-items: center;
+  margin: 10px auto;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  display: flex;
+  width: 55.6%;
   border-radius: 20px;
-  border: 5px solid var(--grey);
+  border: 10px solid var(--grey);
   background-color: white;
+  font-size: 24px;
+  color: var(--grey);
+  font-family: 'Nunito', sans-serif;
+  border-width: thick;
+}
+
+.home-search-wrapper {
+  left: 1.5%;
+  top: 80%;
+  align-items: center;
+  margin: 10px auto;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98%;
+}
+
+.home-search-icon {
+  left: 320px;
+  top: 0;
+  font-size: 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey);
+  position: absolute;
+}
+
+.orangeButton{
+  background-color: var(--orange);
+  color: var(--almost_white);
+  font-weight: bold;
+  border: 3px solid var(--almost_black);
+  left: 43%;
+  border-radius: 20px;
+  position: absolute;
+  width: 14.6%;
+  height: 6.88%;
+  font-size: 24px;
+  position: absolute;
+  top: 108%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.rat-home-text{
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 115%;
+  left: 27.5%;
+}
+.small-text-home{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--almost_black);
+}
+
+.search-suggestions{
+  display: table;
+  width: 60%;
+  table-layout: fixed;
+  top: 93%;
+  left: 21%;
+  position: absolute;
+}
+
+.search-hint{
+  display: table-cell;
+  text-align: center;
+  font-family: 'Nunito Sans';
+  color: var(--orange)
+}
+
+.search-title{
+  display: table-cell;
+  text-align: center;
+  font-family: 'Nunito Sans';
+  color: var(--grey)
 }
 
 .searchbartop{
@@ -509,7 +697,7 @@ img {
 .link {
   color: white;
   font-size: 24px;
-  left: 48.5%;
+  left: 45%;
   position: absolute;
   top: 85%;
   font-family: 'Nunito', sans-serif;
@@ -744,6 +932,11 @@ margin:0
   width: 60%;
   top: 20%;
   left: 20%;
+}
+
+.tutorial-landing{
+  overflow-y: auto;
+  background-color: white;
 }
 
 .tutorial-header{
