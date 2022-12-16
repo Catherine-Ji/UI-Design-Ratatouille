@@ -1,6 +1,9 @@
 import '../App.css';
 import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
+import OmeletRecipe from '../omelet-recipe.png';
+import OmeletSkills from '../omelet-skills.png';
+
 
 
 function Lesson_Ready(){
@@ -25,6 +28,12 @@ function Lesson_Ready(){
         <div class="ratatouillify-content">
         <div class="ratatouillify-title"> 
             <h1>Your new lesson is ready!</h1>
+            <div class="lesson-start-button">
+            <img src={OmeletRecipe} class='omelet-recipe' alt='uploaded omelet recipe'></img>
+            <button onClick={() => {navigate("/loading-recipe");}} class="uploaded-ratatouillify-submit-btn"> Start cooking! </button>
+            </div>
+            <h1>Skills in this recipe include: </h1>
+            <img src={OmeletSkills} class='omelet-skills' alt='uploaded omelet recipe'></img>
         </div>
 
 

@@ -694,6 +694,19 @@ margin:0
   line-height: 33px;
   color: var(--almost_white);
   width: 200px;
+  cursor: pointer;
+}
+
+.lesson-start-button{
+  display: inline;
+}
+
+.omelet-recipe{
+  width:550px;
+}
+
+.omelet-skills{
+  width: 400px;
 }
 
 .people-cooking{
