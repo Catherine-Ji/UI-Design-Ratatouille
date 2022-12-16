@@ -1,17 +1,13 @@
 import '../App.css';
 import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
-import {Helmet} from "react-helmet";
 
-function Loading_Recipe(){
+
+function Lesson_Ready(){
 	let navigate = useNavigate();
 
 	return( 
     <div class="row">
-      <Helmet>
-      	<meta http-equiv="refresh" content="3;url=./lesson-ready/" />
-
-      </Helmet> 
       <div class="column left">
         <img src={Logo} class='smallLogo'></img>
         <div class="container">
@@ -28,7 +24,7 @@ function Loading_Recipe(){
       <div class="column right-ratatouillify">
         <div class="ratatouillify-content">
         <div class="ratatouillify-title"> 
-            <h1>Ratatouilli-fy a recipe and create a custom lesson plan! </h1>
+            <h1>LESSON READY</h1>
         </div>
 
 
@@ -45,4 +41,4 @@ function Loading_Recipe(){
 	);
 }
 
-export default Loading_Recipe;
+export default Lesson_Ready;

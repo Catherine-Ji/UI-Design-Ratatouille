@@ -13,6 +13,7 @@ import Login from './pages/Login';
 import Create_account from './pages/Create_account';
 import Home_returnUser from './pages/Home_returnUser';
 import Loading_recipe from './pages/Loading_recipe';
+import Lesson_Ready from './pages/Lesson_Ready';
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="/search" element={<Search />}/>
           <Route path="/upload" element={<Upload />}/>
           <Route path="/loading-recipe" element={<Loading_recipe />}/>
+          <Route path="/lesson-ready" element={<Lesson_Ready />}/>
           <Route path="/*" element={<div>ERROR: Page Not Found</div>} />
         </Routes>
       </Router>
