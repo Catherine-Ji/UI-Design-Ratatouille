@@ -2,17 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 import SideNavBar from './SideNavBar';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home_newUser from './pages/HomeNewUser';
+import Home_newUser from './pages/Home_newUser';
 import Lessons from './pages/Lessons';
 import Profile from './pages/Profile';
 import Ratatouillify from './pages/Ratatouillify';
 import Upload from './pages/Upload'
-import Login_landing from './pages/LoginLanding';
+import Login_landing from './pages/Login_landing';
 import Search from './pages/Search';
 import Login from './pages/Login';
 import Create_account from './pages/CreateAccount';
 import Home_returnUser from './pages/HomeReturnUser';
 import Tutorial_landing from './pages/TutorialLanding';
+import Loading_recipe from './pages/Loading_recipe';
+import Lesson_Ready from './pages/Lesson_Ready';
+
 
 export default function App() {
   return (
@@ -30,6 +33,8 @@ export default function App() {
           <Route path="/search" element={<Search />}/>
           <Route path="/upload" element={<Upload />}/>
           <Route path="/tutorial-landing" element={<Tutorial_landing />}/>
+          <Route path="/loading-recipe" element={<Loading_recipe />}/>
+          <Route path="/lesson-ready" element={<Lesson_Ready />}/>
           <Route path="/*" element={<div>ERROR: Page Not Found</div>} />
         </Routes>
       </Router>
