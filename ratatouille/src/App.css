@@ -152,8 +152,12 @@ img {
   width: 86.1%;
   background-color: white;
   box-shadow: inset 12px 0 10px -2px rgba(116, 116, 116, 0.4);
+  overflow: scroll;
 
-
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 
 .row::after {
@@ -711,20 +715,18 @@ img {
   left: 48%;
 }
 
+
 .ratatouillify-content{
 /*  background-color:red;*/
   padding-top: 20px;
-  padding-left: 150px;
+  padding-left: 350px;
   padding-right: 50px;
 
 
 }
+
 .ratatouillify-title{
-  font-family: 'Open Sans';
-  font-style: normal;
   padding-bottom: 20px;
-
-
 
 }
 .ratatouillify-upload{
@@ -887,6 +889,11 @@ margin:0
   color: var(--almost_white);
   width: 200px;
 }
+
+.people-cooking{
+  width: 740px;
+}
+
 
 .tutorial-landing{
   overflow-y: auto;
