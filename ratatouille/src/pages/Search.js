@@ -67,13 +67,12 @@ function Search({}){
                 </div>
             </div>
         <div class="column right">
+                        <br></br><br></br>
                         <form onSubmit={enter}>
-                            <input onChange ={change} type='text' placeholder='Search...' value={val} class='searchbartop'></input>
+                            <input onChange ={change} type='text' placeholder='Search...' value={val} class='searchbar'></input>
                         </form>
                         <span className='headertext searchkey'>{key}</span>
-                        <br></br><br></br><br></br>
-                        <br></br><br></br><br></br>
-                        <br></br><br></br><br></br>
+                        
                         <br></br><br></br><br></br>
 
 
