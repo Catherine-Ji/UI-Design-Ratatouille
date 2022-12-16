@@ -219,16 +219,110 @@ img {
 .lessoncard {
   border: 5px solid var(--grey);
   background-color: white;
-  padding: 125px 330px;
+  /* padding: 125px 330px; */
   border-radius: 25px;
   margin: 7%;
   position: absolute;
   left: 16%;
+  display: table;
+  table-layout: fixed;
+  width: 55%;
+  height: 40%;
 }
 
 .lessoncard:hover {
-  box-shadow: var(--yellow) 0px 0px 20px;
-  padding: 127px 335px;
+  box-shadow: var(--yellow) 0px 0px 30px;
+}
+
+.lessoncard-cell{
+  color: var(--grey);
+  display: table-cell;
+  width: 50%;
+  height: 100%;
+  align-self: start;
+  position: absolute;
+  left: 0;
+  top:0;
+}
+
+.lessoncard-image-cell{
+  display: table-cell;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top:0;
+}
+
+.lessoncard-image{
+  height: 80%;
+  width: 92%;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  border-radius: 10px;
+}
+
+.headertext-lessoncard{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  color: var(--almost_black);
+  top: 10%;
+  position: absolute;
+  left: 10%;
+}
+
+.difficulty-label{
+  position: absolute;
+  left: 10%;
+  width: 20%;
+  top: 31.8%;
+  bottom: 55.08%;
+  background: rgba(44, 141, 53, 0.2);
+  border-radius: 50px;
+  font-family: 'Open Sans';
+  text-align: center;
+  font-style: normal;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  color: #2C8D35; 
+  text-align: center;
+}
+
+.difficulty-label-text{
+  position: absolute;
+  left: 15%;
+}
+
+.time-label{
+  position: absolute;
+  left: 35%;
+  top: 34%;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--grey);
+}
+
+.lessoncard-icons{
+  height: 40%;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.row{
+  display: table-row;
 }
 
 .yellow {
@@ -247,8 +341,6 @@ img {
   top: 20.7%;
   border-radius: 50%;
   position: absolute;
-  z-index: 900;
-  
 }
 
 .circle2 {
@@ -277,7 +369,6 @@ img {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-
   color: var(--almost_black);
 }
 

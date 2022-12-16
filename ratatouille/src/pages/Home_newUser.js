@@ -1,6 +1,8 @@
 import '../App.css';
 import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
+import lesson_icons from "../lessoncard-icons.png";
+import omelet from "../omelet.jpeg";
 
 function Home_newUser() {
     let navigate = useNavigate();
@@ -26,7 +28,17 @@ function Home_newUser() {
         <div class="circle3 yellow"></div>
         <span className='headertext hometext1' >Get started on a &nbsp;</span><span class='headertext home-newUser-text2 orangetext'>lesson plan</span><span class='headertext home-newUser-text3'>...</span>
         <br></br>
-        <button class='lessoncard'>lesson card</button>
+        <button className='lessoncard' onClick={() => {navigate("/tutorial-landing")}}>
+          <div className='lessoncard-cell'>
+            <span className='row headertext-lessoncard'>Omelet</span>
+            <div className="difficulty-label"><div className="difficulty-label-text">easy</div></div>
+            <span className='time-label'>5 min</span>
+            <img src={lesson_icons} class='lessoncard-icons'></img>
+          </div>
+          <div className="lessoncard-image-cell">
+            <img src={omelet} className="lessoncard-image"></img>
+          </div>
+        </button>
         <span className='headertext searchtext1' >Get help with something</span><span class='headertext searchtext2 orangetext'> &nbsp; specifc</span><span class='headertext searchtext3'>...</span>
         {/* search bar */}
         <form onSubmit={()=> {navigate("/search");} } className="home-search-wrapper">
