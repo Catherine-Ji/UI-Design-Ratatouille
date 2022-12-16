@@ -3,8 +3,10 @@ import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
 import UploadImage from '../upload_image.png';
 import Microphone from '../microphone.png'
+import FileIcon from '../fileicon.png'
+import Delete from '../delete-icon.png'
 
-function Ratatouillify(){
+function Upload(){
     let navigate = useNavigate();
     return(
     <div class="row">
@@ -28,7 +30,21 @@ function Ratatouillify(){
         </div>
         <div class="ratatouillify-upload">
             <h1>Upload </h1>
-            <button id="upload-btn" onClick={() => {navigate("/upload");}}>  <div class="upload-btn-content"> <img src={UploadImage} alt="upload cloud" class='uploadimage'></img> <p class="p1">Drop your recipe file here or  browse </p> <p class="p2"> Only .txt, .mov, and .mp4 files are supported </p> </div> </button>
+            <button id="uploaded-btn" >  
+                <div class="uploaded-btn-content"> 
+
+                    <img src={FileIcon} alt="file icon" class='fileimage'></img> 
+                    <span class="recipe-file"> omeleterecipe.txt </span> 
+                    <br>
+                    </br>  
+                    <span class="file-info" >7.4MB 100% </span> 
+
+
+                </div> 
+            </button>
+           <a href="../ratatouillify"> <img src={Delete} alt="microphone icon for verbally uploading a recipe" class="microphoneimage"></img> </a>
+           
+
         </div>
         <h1 id="or"> OR </h1>
 
@@ -39,7 +55,7 @@ function Ratatouillify(){
 
         <div class="ratatouillify-submit">
             <h1> Submit </h1>
-            <button class="ratatouillify-submit-btn"> Ratatouilify </button>
+            <button onClick={() => {navigate("/loading-recipe");}} class="uploaded-ratatouillify-submit-btn"> Ratatouilify </button>
         </div>
 
       </div>
@@ -49,4 +65,4 @@ function Ratatouillify(){
     )
 }
 
-export default Ratatouillify;
+export default Upload;
