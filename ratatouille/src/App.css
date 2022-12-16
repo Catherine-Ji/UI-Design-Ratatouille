@@ -623,22 +623,177 @@ img {
 .ratatouillify-content{
 /*  background-color:red;*/
   padding-top: 20px;
-  padding-left: 50px;
+  padding-left: 150px;
   padding-right: 50px;
 
 
 }
 .ratatouillify-title{
-/*  background-color: blue;*/
+  font-family: 'Open Sans';
+  font-style: normal;
+  padding-bottom: 20px;
+
 
 
 }
 .ratatouillify-upload{
   color: var(--orange);
+  font-family: 'Open Sans';
+font-style: normal;
+}
 
+.uploadimage{
+  align-items: center;
+  margin-top: 5px;
+  height:50px;
+
+
+}
+
+
+#upload-btn{
+   border: 5px dashed rgba(126, 127, 154, 0.5);
+   border-radius: 25px;
+   width: 650px;
+   height: 150px;
+  cursor: pointer;
+
+}
+
+#uploaded-btn{
+  background: rgba(233, 127, 55, 0.1);
+  border: 5px solid #E97F37;
+  border-radius: 25px;
+  width: 650px;
+  height: 150px;
+
+}
+
+.upload-btn-content{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  text-align: center;
+
+}
+
+.uploaded-btn-content{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  text-align: justify;
+
+
+}
+
+.fileimage{
+  padding-left: 30px;
+  width: 55px;
+  height: 35 px;
+  justify-content:left;
+  white-space:nowrap
+
+}
+
+/*.delete-file{
+  background-color:red;
+  padding-right: 00px;
+  width: 5 px;
+  height: 75px;
+  border-radius: 50%;
+}*/
+
+.recipe-file{
+  color:red;
+  padding-left: 100px;
+
+}
+
+.file-info{
+  color:red;
+  padding-left: 100px;
+}
+
+.p1{
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+align-items: center;
+text-align: center;
+white-space: nowrap;
+margin:0
+}
+
+.p2{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 19px;
+  margin:0
+}
+
+#browse{
+  color: var(--orange);
+}
+.ratatouillify-manually-input{
+  color: var(--orange);
+  font-family: 'Open Sans';
+  font-style: normal;
+}
+
+#manual-textarea{
+  border: 5px solid #7E7F9A;
+  border-radius: 25px;
+  width: 620px;
+  height: 75px;
+  color: var(--grey);
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+
+}
+
+.microphoneimage{
+  width: 50px;
+
+}
+
+.ratatouillify-submit{
+  color: var(--orange);
+  font-family: 'Open Sans';
+  font-style: normal;
 }
 
 #or{
   color:var(--grey);
+  font-family: 'Open Sans';
+  font-style: normal;
+}
+
+.ratatouillify-submit-btn{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  border: 3px solid #7E7F9A;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 33px;
+  background-color: white;
+  color: var(--grey);
+  width: 200px;
+}
+
+.uploaded-ratatouillify-submit-btn{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  border: 3px solid #1E1D1A;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  background-color: var(--orange);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33px;
+  color: var(--almost_white);
+  width: 200px;
 }
 

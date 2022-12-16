@@ -6,6 +6,7 @@ import Home_newUser from './pages/Home_newUser';
 import Lessons from './pages/Lessons';
 import Profile from './pages/Profile';
 import Ratatouillify from './pages/Ratatouillify';
+import Upload from './pages/Upload'
 import Login_landing from './pages/Login_landing';
 import Search from './pages/Search';
 import Login from './pages/Login';
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/login" element={<Login />}/>
           <Route path="/create-account" element={<Create_account />}/>
           <Route path="/search" element={<Search />}/>
+          <Route path="/upload" element={<Upload />}/>
           <Route path="/*" element={<div>ERROR: Page Not Found</div>} />
         </Routes>
       </Router>
