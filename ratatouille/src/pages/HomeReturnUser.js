@@ -6,6 +6,27 @@ import omelet from '../omelet.jpeg';
 
 export default function Home_returnUser() {
     let navigate = useNavigate();
+    const [searchkey, setSearch] = useState("");
+    const [val, setVal] = useState("");
+  
+    const submitsearch=(event)=>{
+      event.preventDefault();
+      setSearch(val);
+      console.log(val)
+      console.log(searchkey)
+      navigate("/search",{
+        state: {
+          searchKey: val
+        }
+      });
+    }
+  
+  
+    const change = event => {
+      event.preventDefault();
+      setVal(event.target.value)
+      console.log(val)
+  }
     return (
     <div class="row">
       <div class="column left">
@@ -41,11 +62,11 @@ export default function Home_returnUser() {
         </button>
         <span className='headertext searchtext1' >Get help with something</span><span class='headertext searchtext2 orangetext'> &nbsp; specifc</span><span class='headertext searchtext3'>...</span>
         {/* search bar */}
-        <form onSubmit={()=> {navigate("/search");} } className="home-search-wrapper">
+        <form onSubmit={submitsearch} className="home-search-wrapper">
           <span class="home-search-icon">
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
-          <input type='text' placeholder='Search...' class='searchbar'></input>
+          <input type='text' onChange ={change} placeholder='Search...' class='searchbar'></input>
         </form>
         <div className="search-suggestions">
           <span className="small-text-home search-title">Top Suggested</span>
