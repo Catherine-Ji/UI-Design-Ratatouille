@@ -387,29 +387,29 @@ img {
 .hometext1{
   position: absolute;
   left: 23%;
-  top: 25%;
+  top: 20%;
 }
 
 .hometext2{
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 41%;
 }
 
 .hometext3{
   position: absolute;
   left: 52%;
-  top: 25%;
+  top: 20%;
 }
 
 .home-newUser-text2{
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 40%;
 }
 .home-newUser-text3{
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 51%;
 }
 
@@ -984,9 +984,8 @@ margin:0
 
 .tutorial-exit{
   position: absolute;
-  top: 1%;
-  left: 80%;
-  height: 150%;
+  top: 5%;
+  left: 95%;
   width: auto;
   color: var(--grey)
 }
@@ -1036,4 +1035,127 @@ margin:0
   padding-top: 55px;
 }
 
+.TutorialPageWrapper{
+  background-color: white;
+  overflow-y: auto;
+}
+
+.tutorial-step{
+  position: absolute;
+  left: 13.96%;
+  right: 35.35%;
+  top: 5.13%;
+  bottom: 87.74%;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: var(--orange);
+}
+
+.tutorial-scrollable-area{
+  position: absolute;
+  width: 84.45%;
+  height: 87.7%;
+  left: 9%;
+  top: 17.3%;
+  overflow-y: scroll;
+}
+
+.tutorial-scrollable-inner{
+  position: absolute;
+  width: 92.3%;
+  height: 149.2%;
+  left: 3.2%;
+  top: 0;
+  /* background-color: plum; */
+}
+
+.tutorial-skill-description{
+  position: absolute;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: var(--almost_black);
+  left: 3.16%;
+  top: 2%;
+}
+
+.tutorial-transcript-button{
+  position: absolute;
+  width: 13.5%;
+  height: 3.7%;
+  left: 83.4%;
+  top: 52.4%;
+  background-color: white;
+  border-radius: 25px;
+  border: 3px solid var(--grey);
+  color: var(--grey);
+}
+
+.tutorial-video{
+  position: absolute;
+  width: 93.86%;
+  height: 44.78%;
+  left: 3.1%;
+  top: 6.57%;
+}
+
+.tutorial-transcript-header{
+  position: absolute;
+  left: 3.1%;
+  top: 56%;
+}
+
+.tutorial-transcript{
+  position: absolute;
+  left: 3.1%;
+  top: 59%;
+}
+
+#tutorial-transcript{
+  display: none;
+}
+
+.tutorial-snapshot{
+  position: absolute;
+  left: 3.07%;
+}
+
+#snapshots{
+  position: relative;
+  top: 56%;
+}
+
+.tutorial-snapshot-image{
+  position: absolute;
+  width: 1150px;
+  height: 300px;
+  left: 3.1%;
+  top: 50px;
+  background-color: var(--grey);
+}
+
+.tutorial-back-btn{
+  position: absolute;
+  left: 4.03%;
+  top: 92.8%;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 22px;
+  color: var(--grey);
+}
+
+.tutorial-back-btn:hover{
+  color: var(--orange);
+}
 

@@ -15,6 +15,7 @@ import Home_returnUser from './pages/HomeReturnUser';
 import Tutorial_landing from './pages/TutorialLanding';
 import Loading_recipe from './pages/Loading_recipe';
 import Lesson_Ready from './pages/Lesson_Ready';
+import TutorialPage1 from './pages/TutorialPage1';
 
 
 export default function App() {
@@ -36,6 +37,7 @@ export default function App() {
           <Route path="/loading-recipe" element={<Loading_recipe />}/>
           <Route path="/lesson-ready" element={<Lesson_Ready />}/>
           <Route path="/*" element={<div>ERROR: Page Not Found</div>} />
+          <Route path='/tutorial-page-1' element={<TutorialPage1 />}/>
         </Routes>
       </Router>
   );
