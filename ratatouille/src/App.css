@@ -298,6 +298,7 @@ img {
 
 .difficulty-label-text{
   position: absolute;
+  text-align: center;
   left: 15%;
 }
 
@@ -616,6 +617,14 @@ img {
 }
 
 
+.lessontext2{
+  text-align: left;
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  
+}
+
 .loginbtn_white{
   background-color: white;
   color: var(--grey);
@@ -897,6 +906,100 @@ margin:0
 /* Styling for list component */
 .List {
   margin-top: 3rem;
+}
+
+
+.suggestions{
+  position: relative;
+  left: 10%;
+  height: 458px;
+  top: 480px;
+  overflow-x: scroll;
+  display: flex;
+}
+
+.suggest{
+  color: var(--grey);
+  display: table-cell;
+  position: relative;
+  width: 300px;
+  height: 404px;
+  background-color: white;
+  padding: 10rem 10rem 1rem 1rem; 
+  border-radius: 20px;
+  text-align: justify left;
+  margin: 2rem 1rem;
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
+  border: 5px solid var(--grey);
+}
+
+
+.suggestcard {
+  color: var(--grey);
+  display: table-cell;
+  width: 100%;
+  height: 70%;
+  align-self: start;
+  position: absolute;
+  left: 0;
+  top:0;
+}
+
+
+.suggest-image-cell{
+  display: table-cell;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top:50%;
+}
+
+
+
+.suggest-icons{
+  height: 37%;
+  width: 70%;
+  position: absolute;
+  top: 38%;
+  left: 10%;
+}
+
+
+
+.suggest-difficulty-label{
+  position: absolute;
+  left: 10.25%;
+  right: 60.25%;
+  top: 25%;
+  bottom: 63%;
+  background: rgba(44, 141, 53, 0.2);
+  border-radius: 50px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  display: flex;
+  color: #2C8D35; 
+}
+
+.suggest-difficulty-label-text{
+  position: absolute;
+  left: 22%;
+}
+
+.suggest-time-label{
+  position: absolute;
+  left: 73%;
+  top: 25.8%;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--grey);
 }
 
 .list-item {
