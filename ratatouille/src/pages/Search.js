@@ -4,7 +4,8 @@ import {useLocation, useNavigate, useNavigation} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
 import { useEffect, useState } from 'react';
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react';
+import lesson_icons from "../lessoncard-icons.png";
+import omelet from "../omelet.jpeg";
 
 
 
@@ -78,14 +79,17 @@ function Search({}){
 
 
                         <div className='results'>
-                                <li key="test" className="list-item">
-                                    <span>TEST</span>
-                                </li>
-
-
                             {results.map((reciepe) => (
-                                <li key={reciepe.name} className="list-item">
-                                    <div className='item-primary-text'>{reciepe.name}</div>
+                                <li className="list-item">
+                                    <div class='searchcard'>
+                                        <span class='row headertext-lessoncard'>{reciepe.name}</span>
+                                        <div className="search-difficulty-label"><div className="search-difficulty-label-text">easy</div></div>
+                                        <span className='search-time-label'>5 min</span>
+                                        <img src={lesson_icons} class='search-icons'></img>
+                                    </div>
+                                    <div className="search-image-cell">
+                                        <img src={omelet} className="lessoncard-image"></img>
+                                    </div>
                                 </li>
                             ))}
                         </div>
