@@ -153,8 +153,7 @@ img {
   background-color: white;
   box-shadow: inset 12px 0 10px -2px rgba(116, 116, 116, 0.4);
   -ms-overflow-style: none;
-
-
+  overflow-x:hidden;
 }
 
 .row::after {
@@ -1039,9 +1038,17 @@ margin:0
 .welcome-title{
   margin-top: 30px;
   padding-left: 600px;
+  text-align: center;
 }
 
 .six-people-cooking{
   width: 450px;
 }
 
+.app-title-orange{
+  color: var(--orange);
+}
+
+.skip{
+  color: var(--orange);
+}

@@ -25,9 +25,11 @@ export default function Onboarding_Welcome(){
       
       <div class="column right-ratatouillify">
         <div class="welcome-title">
-          <h1>Welcome to Ratatouille! </h1> 
+         <h1>Welcome to </h1> <span class="app-title-orange"> <h1>Ratatouille!</h1> </span> 
           <img src={Six_people_cooking} alt="six people in the kitchen cooking" class='six-people-cooking'></img>
-
+          <h2> let’s get you cooking! </h2>
+          <button onClick={() => {navigate("/loading-recipe");}} class="uploaded-ratatouillify-submit-btn"> get started </button>
+          <div> <a class="skip" href="/home">skip</a> </div>
         </div>
       </div>
     </div>
