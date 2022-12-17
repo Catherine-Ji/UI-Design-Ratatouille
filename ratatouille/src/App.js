@@ -8,6 +8,7 @@ import Profile from './pages/Profile';
 import Ratatouillify from './pages/Ratatouillify';
 import Upload from './pages/Upload'
 import Login_landing from './pages/Login_landing';
+import Reciepes from './pages/Recipes';
 import Search from './pages/Search';
 import Login from './pages/Login';
 import Create_account from './pages/CreateAccount';
@@ -39,6 +40,7 @@ export default function App() {
           <Route path="/upload" element={<Upload />}/>
           <Route path="/tutorial-landing" element={<Tutorial_landing />}/>
           <Route path="/loading-recipe" element={<Loading_recipe />}/>
+          <Route path="/reciepes" element={<Reciepes/>}/>
           <Route path="/lesson-ready" element={<Lesson_Ready />}/>
           <Route path="/onboarding-welcome" element={<Onboarding_Welcome />}/>
           <Route path="/onboarding-lesson" element={<Onboarding_Lesson />}/>

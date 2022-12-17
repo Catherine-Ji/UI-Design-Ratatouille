@@ -4,7 +4,7 @@ import Logo from '../Logo_orange.png';
 import lesson_icons from '../lessoncard-icons.png';
 import omelet from '../omelet.jpeg';
 
-function Lessons(){
+function Reciepes(){
     let navigate = useNavigate();
     const reciepes = [
 
@@ -59,9 +59,9 @@ function Lessons(){
               </button> 
             ))}
             </div>
-          <button className="orangeButton" onClick={() => {navigate("/reciepes");}}>View all reciepes</button>
+          <button className="orangeButton" onClick={() => {navigate("/search");}}>View all reciepes</button>
         </div></>
   );
 }
 
-export default Lessons;
+export default Reciepes;
