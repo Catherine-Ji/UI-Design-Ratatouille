@@ -16,8 +16,8 @@ import Tutorial_landing from './pages/TutorialLanding';
 import Loading_recipe from './pages/Loading_recipe';
 import Lesson_Ready from './pages/Lesson_Ready';
 import Onboarding_Welcome from './pages/OnboardingWelcome'
-
-
+import Onboarding_Lesson from './pages/OnboardingLesson'
+import Onboarding_Search from './pages/OnboardingSearch'
 
 export default function App() {
   return (
@@ -38,6 +38,8 @@ export default function App() {
           <Route path="/loading-recipe" element={<Loading_recipe />}/>
           <Route path="/lesson-ready" element={<Lesson_Ready />}/>
           <Route path="/onboarding-welcome" element={<Onboarding_Welcome />}/>
+          <Route path="/onboarding-lesson" element={<Onboarding_Lesson />}/>
+          <Route path="/onboarding-search" element={<Onboarding_Search />}/>
           <Route path="/*" element={<div>ERROR: Page Not Found</div>} />
         </Routes>
       </Router>

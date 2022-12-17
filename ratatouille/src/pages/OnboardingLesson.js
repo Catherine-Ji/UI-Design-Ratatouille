@@ -1,9 +1,10 @@
 import '../App.css';
 import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
-import Six_people_cooking from '../six-people-cooking.png';
+import {Helmet} from "react-helmet";
+import Onboarding_Lesson_Card from '../onboarding_lesson_card.png';
 
-export default function Onboarding_Welcome(){
+export default function Onboarding_Lesson(){
 	let navigate = useNavigate();
 
 	return( 
@@ -22,13 +23,13 @@ export default function Onboarding_Welcome(){
         </div>
       </div>
       
-      <div class="column right-ratatouillify">
-        <div class="welcome-title">
-         <h1>Welcome to </h1> <span class="app-title-orange"> <h1>Ratatouille!</h1> </span> 
-          <img src={Six_people_cooking} alt="six people in the kitchen cooking" class='six-people-cooking'></img>
-          <h2> let’s get you cooking! </h2>
-          <button onClick={() => {navigate("/onboarding-lesson");}} class="uploaded-ratatouillify-submit-btn"> get started </button>
-          <div> <a class="skip" href="/home">skip</a> </div>
+      <div class="column lesson-right-ratatouillify">
+        <div class="onboarding-lesson-cards">
+         <h1>Lesson Cards </h1> 
+          <img src={Onboarding_Lesson_Card} alt="six people in the kitchen cooking" class='lesson-card-img'></img>
+          <p class="left-align"> <a class="skip" href="/onboarding-welcome">back</a>
+          <span class="right-align"><a class="skip" href="/onboarding-search">next</a> </span>
+          </p>
         </div>
       </div>
     </div>

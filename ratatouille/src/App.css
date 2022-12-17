@@ -1041,6 +1041,13 @@ margin:0
   text-align: center;
 }
 
+.onboarding-lesson-cards{
+  margin-top: 30px;
+  padding-left: 500px;
+  text-align: center;
+  color: var(--orange);
+}
+
 .six-people-cooking{
   width: 450px;
 }
@@ -1051,4 +1058,25 @@ margin:0
 
 .skip{
   color: var(--orange);
+  font-size: 20px;
+}
+
+.lesson-right-ratatouillify {
+  width: 100%%;
+  background-color: white;
+  box-shadow: inset 12px 0 10px -2px rgba(116, 116, 116, 0.4);
+  -ms-overflow-style: none;
+  overflow-x:hidden;
+}
+
+.lesson-card-img{
+  width: 500px;
+}
+
+.left-align{
+  text-align: left;
+}
+
+.right-align{
+  float:right;
 }
