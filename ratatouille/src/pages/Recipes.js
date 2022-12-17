@@ -4,13 +4,16 @@ import Logo from '../Logo_orange.png';
 import lesson_icons from '../lessoncard-icons.png';
 import omelet from '../omelet.jpeg';
 
-function Lessons(){
+function Reciepes(){
     let navigate = useNavigate();
     const reciepes = [
 
       {name: "Omelete"},
       {name: "Sausage"},
       {name: "Egg"},
+      {name: "Bacon"},
+      {name: "Chicken"},
+      {name: "Pasta"},
       {name: "Burger"}
   ];
     return (
@@ -29,22 +32,7 @@ function Lessons(){
           </div>
         </div>
       </div><div class="column right">
-          <span className='headertext lessontext1'>Pick up where you left off...</span>
-          <br></br>
-          <br></br>
-          <button className='lessoncard' onClick={() => {navigate("/tutorial-landing")}}>
-            <div className='lessoncard-cell'>
-              <span className='row headertext-lessoncard'>Omelet</span>
-              <div className="difficulty-label"><div className="difficulty-label-text">easy</div></div>
-              <span className='time-label'>5 min</span>
-              <img src={lesson_icons} class='lessoncard-icons'></img>
-            </div>
-            <div className="lessoncard-image-cell">
-              <img src={omelet} className="lessoncard-image"></img>
-            </div>
-          </button>
-          <span className='headertext lessontext2'>Other Suggested Lessons</span>
-          <div class="suggestions">
+          <div class="all">
             {reciepes.map((reciepe)=>(
               <button className="suggest">
               <div class='suggestcard'>
@@ -59,9 +47,8 @@ function Lessons(){
               </button> 
             ))}
             </div>
-          <button className="orangeButton" onClick={() => {navigate("/reciepes");}}>View all reciepes</button>
         </div></>
   );
 }
 
-export default Lessons;
+export default Reciepes;

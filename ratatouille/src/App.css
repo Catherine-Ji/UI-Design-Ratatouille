@@ -915,6 +915,15 @@ margin:0
 }
 
 
+.all{
+  position: relative;
+  left: 10%;
+  height: 458px;
+  top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .suggestions{
   position: relative;
   left: 10%;
@@ -956,6 +965,7 @@ margin:0
   display: table-cell;
   width: 100%;
   height: 50%;
+  left: 4%;
   position: absolute;
   top:50%;
 }
