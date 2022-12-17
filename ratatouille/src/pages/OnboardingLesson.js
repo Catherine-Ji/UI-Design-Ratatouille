@@ -1,7 +1,6 @@
 import '../App.css';
 import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
-import {Helmet} from "react-helmet";
 import Onboarding_Lesson_Card from '../onboarding_lesson_card.png';
 
 export default function Onboarding_Lesson(){

@@ -1106,3 +1106,18 @@ margin:0
   margin-top: 20px;
   margin-bottom: 50px;
 }
+
+.onboarding-ratatouillify-text{
+  color: black;
+  max-width: 550px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.rat-title{
+  margin-bottom: 30px;
+}
+
+.rat-paragraph-space{
+  margin-top: 50px;
+}
