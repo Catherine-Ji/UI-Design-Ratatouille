@@ -1,18 +1,15 @@
 import '../App.css';
 import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
-import OmeletRecipe from '../omelet-recipe.png';
-import OmeletSkills from '../omelet-skills.png';
+import Six_people_cooking from '../six-people-cooking.png';
 
-
-
-function Lesson_Ready(){
+export default function Onboarding_Welcome(){
 	let navigate = useNavigate();
 
 	return( 
-    <div class="row">
+    <div class="row"> 
       <div class="column left">
-        <img src={Logo} class='smallLogo' alt='app logo'></img>
+        <img src={Logo} class='smallLogo'></img>
         <div class="container">
           <i class="fa fa-solid fa-user user" style={{ fontSize: '2em' }} />
           <div class="btn-group">
@@ -24,25 +21,17 @@ function Lesson_Ready(){
           </div>
         </div>
       </div>
+      
       <div class="column right-ratatouillify">
-        <div class="ratatouillify-content">
-        <div class="ratatouillify-title"> 
-            <h1>Your new lesson is ready!</h1>
-            <div class="lesson-start-button">
-            <img src={OmeletRecipe} class='omelet-recipe' alt='omelet recipe lesson'></img>
-            <button onClick={() => {navigate("/tutorial-landing");}} class="uploaded-ratatouillify-submit-btn"> Start cooking! </button>
-            </div>
-            <h1>Skills in this recipe include: </h1>
-            <img src={OmeletSkills} class='omelet-skills' alt='uploaded omelet recipe'></img>
+        <div class="welcome-title">
+         <h1>Welcome to </h1> <span class="app-title-orange"> <h1>Ratatouille!</h1> </span> 
+          <img src={Six_people_cooking} alt="six people in the kitchen cooking" class='six-people-cooking'></img>
+          <h2> let’s get you cooking! </h2>
+          <button onClick={() => {navigate("/onboarding-lesson");}} class="uploaded-ratatouillify-submit-btn"> get started </button>
+          <div> <a class="skip" href="/home">skip</a> </div>
         </div>
-
-
-
-      </div>
       </div>
     </div>
 
 	);
 }
-
-export default Lesson_Ready;

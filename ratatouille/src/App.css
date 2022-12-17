@@ -153,8 +153,7 @@ img {
   background-color: white;
   box-shadow: inset 12px 0 10px -2px rgba(116, 116, 116, 0.4);
   -ms-overflow-style: none;
-
-
+  overflow-x:hidden;
 }
 
 .row::after {
@@ -1035,6 +1034,27 @@ margin:0
   padding-top: 55px;
 }
 
+
+.welcome-title{
+  margin-top: 30px;
+  padding-left: 600px;
+  text-align: center;
+}
+
+.onboarding-lesson-cards{
+  margin-top: 30px;
+  padding-left: 500px;
+  text-align: center;
+  color: var(--orange);
+}
+
+.six-people-cooking{
+  width: 450px;
+}
+
+.app-title-orange{
+  color: var(--orange);
+}
 .TutorialPageWrapper{
   background-color: white;
   overflow-y: auto;
@@ -1159,3 +1179,68 @@ margin:0
   color: var(--orange);
 }
 
+.skip{
+  color: var(--orange);
+  font-size: 20px;
+}
+
+.lesson-right-ratatouillify {
+  width: 100%%;
+  background-color: white;
+  box-shadow: inset 12px 0 10px -2px rgba(116, 116, 116, 0.4);
+  -ms-overflow-style: none;
+  overflow-x:hidden;
+}
+
+.lesson-card-img{
+  width: 500px;
+}
+
+.test-lesson-card-img{
+  width: 2px;
+}
+
+.left-align{
+  text-align: left;
+  position: absolute;
+  margin-top: 20px;
+
+}
+
+.right-align{
+  float:right;
+  position: absolute;
+  margin-left: 400px;
+/*  left: 71.81%;
+  right: 24.44%;
+  top: 75.98%;
+  bottom: 21.29%;*/
+}
+
+.onboarding-search-text{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--almost_black);
+}
+
+.onboarding-search-img{
+  width: 600px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.onboarding-ratatouillify-text{
+  color: black;
+  max-width: 550px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.rat-title{
+  margin-bottom: 30px;
+}
+
+.rat-paragraph-space{
+  margin-top: 50px;
+}

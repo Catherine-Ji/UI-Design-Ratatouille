@@ -4,6 +4,7 @@ import Logo from '../Logo_orange.png';
 import { useState } from 'react';
 import lesson_icons from "../lessoncard-icons.png";
 import omelet from "../omelet.jpeg";
+import {Helmet} from "react-helmet";
 
 
 
@@ -32,9 +33,11 @@ function Home_newUser() {
 }
 
 
-
     return (
     <div class="row">
+      <Helmet>
+        <meta http-equiv="refresh" content=".01;url=./onboarding-welcome/" />
+      </Helmet> 
       <div class="column left">
         <img src={Logo} class='smallLogo'></img>
         <div class="container">
