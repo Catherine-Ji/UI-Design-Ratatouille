@@ -1,7 +1,7 @@
 import '../App.css';
 import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
-import Onboarding_Lesson_Card from '../onboarding_lesson_card.png';
+import Onboarding_Search_Img from '../onboarding_search.png';
 
 export default function Onboarding_Search(){
 	let navigate = useNavigate();
@@ -25,8 +25,9 @@ export default function Onboarding_Search(){
       <div class="column lesson-right-ratatouillify">
         <div class="onboarding-lesson-cards">
          <h1>Search </h1> 
-          <img src={Onboarding_Lesson_Card} alt="six people in the kitchen cooking" class='lesson-card-img'></img>
-          <p class="left-align"> <a class="skip" href="/onboarding-welcome">back</a>
+          <img src={Onboarding_Search_Img} alt="six people in the kitchen cooking" class='onboarding-search-img'></img>
+          <p class="onboarding-search-text">Need help with a specific skill or recipe? <div></div> Search for it directly in the search bar </p>
+          <p class="left-align"> <a class="skip" href="/onboarding-lesson">back</a>
           <span class="right-align"><a class="skip" href="/onboarding-search">next</a> </span>
           </p>
         </div>

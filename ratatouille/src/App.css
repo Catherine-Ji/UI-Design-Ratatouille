@@ -1073,10 +1073,36 @@ margin:0
   width: 500px;
 }
 
+.test-lesson-card-img{
+  width: 2px;
+}
+
 .left-align{
   text-align: left;
+  position: absolute;
+  margin-top: 20px;
+
 }
 
 .right-align{
   float:right;
+  position: absolute;
+  margin-left: 400px;
+/*  left: 71.81%;
+  right: 24.44%;
+  top: 75.98%;
+  bottom: 21.29%;*/
+}
+
+.onboarding-search-text{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--almost_black);
+}
+
+.onboarding-search-img{
+  width: 600px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
