@@ -1177,6 +1177,14 @@ margin:0
   top: 2%;
 }
 
+.tutorial-skill-icon{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 37.6%;
+  top: 12.5%;
+}
+
 .tutorial-transcript-button{
   position: absolute;
   width: 13.5%;
@@ -1227,9 +1235,15 @@ margin:0
   position: absolute;
   width: 1150px;
   height: 300px;
-  left: 3.1%;
+  left: 0;
   top: 50px;
-  background-color: var(--grey);
+}
+
+.snapshot-image{
+  width: 114.7%;
+  height: auto;
+  left: -4.4%;
+  position: absolute;
 }
 
 .tutorial-back-btn{
@@ -1248,13 +1262,64 @@ margin:0
   color: var(--orange);
 }
 
+.tutorial-end-title{
+  position: absolute;
+  left: 26.46%;
+  right: 21.53%;
+  top: 24.61%;
+  bottom: 68.26%;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 68px;
+  display: flex;
+  align-items: center;
+  color: var(--orange);
+}
+
+.tutorial-end-points{
+  position: absolute;
+  left: 36.94%;
+  right: 36.99%;
+  top: 36.04%;
+  bottom: 59.08%;
+}
+
+.tutorial-end-skills{
+  position: absolute;
+  left: 30.21%;
+  top: 53.42%;
+  bottom: 43.71%;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  color: var(--yellow);
+}
+
+.tutorial-end-button{
+  position: absolute;
+  left: 40.49%;
+  right: 40.49%;
+  top: 68.75%;
+  bottom: 24.41%;
+}
+
+.tutorial-end-button:hover{
+  box-shadow: var(--orange) 0px 0px 20px;
+}
+
 .skip{
   color: var(--orange);
   font-size: 20px;
 }
 
 .lesson-right-ratatouillify {
-  width: 100%%;
+  width: 100%;
   background-color: white;
   box-shadow: inset 12px 0 10px -2px rgba(116, 116, 116, 0.4);
   -ms-overflow-style: none;
