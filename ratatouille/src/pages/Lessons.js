@@ -3,15 +3,17 @@ import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
 import lesson_icons from '../lessoncard-icons.png';
 import omelet from '../omelet.jpeg';
+import burger from '../burger.jpeg';
+import sausage from '../sausage.jpeg';
+import chicken from '../chicken.webp';
 
 function Lessons(){
     let navigate = useNavigate();
     const reciepes = [
 
-      {name: "Omelet"},
-      {name: "Sausage"},
-      {name: "Egg"},
-      {name: "Burger"}
+      {name: "Sausage",img:sausage},
+      {name: "Chicken",img:chicken},
+      {name: "Burger",img:burger},
   ];
     return (
     <><div class="row">
@@ -49,12 +51,12 @@ function Lessons(){
               <button className="suggest" onClick={() => { navigate("/tutorial-landing"); } }>
               <div class='suggestcard'>
                 <span class='row headertext-lessoncard'>{reciepe.name}</span>
-                <div className="suggest-difficulty-label"><div className="suggest-difficulty-label-text">easy</div></div>
+                <div className="suggest-easy-label"><div className="suggest-easy-label-text">easy</div></div>
                 <span className='suggest-time-label'>5 min</span>
               <img src={lesson_icons} class='suggest-icons'></img>
               </div>
               <div className="suggest-image-cell">
-                <img src={omelet} className="lessoncard-image"></img>
+                <img src={reciepe.img} className="lessoncard-image"></img>
               </div>
               </button> 
             ))}

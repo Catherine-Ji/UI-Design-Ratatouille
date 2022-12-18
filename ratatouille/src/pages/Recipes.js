@@ -3,33 +3,43 @@ import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
 import lesson_icons from '../lessoncard-icons.png';
 import omelet from '../omelet.jpeg';
+import sausage from '../sausage.jpeg';
+import bacon from '../bacon.jpeg';
+import burger from '../burger.jpeg';
+import pasta from '../pasta.jpeg';
+import noodles from '../noodles.jpeg';
+import greeksalad from '../greeksalad.jpeg';
+import padthai from '../padthai.jpeg';
+import meatball from '../meatball.jpeg';
+import salmon from '../salmon.jpeg';
+import chicken from '../chicken.webp';
 import back from "../back icon.png";
 
 function Reciepes(){
     let navigate = useNavigate();
     const easyreciepes = [
 
-      {name: "Omelet"},
-      {name: "Sausage"},
-      {name: "Bacon"},
-      {name: "Chicken"},
-      {name: "Pasta"},
-      {name: "Burger"},
-      {name: "Noodles"},
-      {name: "Greek Salad"}
+      {name: "Omelet",img:omelet},
+      {name: "Sausage",img:sausage},
+      {name: "Bacon",img:bacon},
+      {name: "Chicken",img:chicken},
+      {name: "Burger",img:burger},
+      {name: "Noodles",img:noodles},
+      {name: "Greek Salad",img:greeksalad}
   ];
 
   const mediumrecipes = [
 
-        {name:"Pad Thai"},
-        {name:"Meatballs"}
+    {name:"Pad Thai",img:padthai},
+    {name:"Pasta",img:pasta},
+    {name:"Meatballs",img:meatball}
 
   ];
 
 
   const hardreciepes = [
 
-        {name:"Salmon"}
+        {name:"Salmon",img:salmon}
 
   ];
 
@@ -62,7 +72,7 @@ function Reciepes(){
               <img src={lesson_icons} class='suggest-icons'></img>
               </div>
               <div className="suggest-image-cell">
-                <img src={omelet} className="lessoncard-image"></img>
+                <img src={reciepe.img} className="lessoncard-image"></img>
               </div>
               </button> 
             ))}
@@ -71,11 +81,11 @@ function Reciepes(){
               <div class='suggestcard'>
                 <span class='row headertext-lessoncard'>{reciepe.name}</span>
                 <div className="suggest-med-label"><div className="suggest-med-label-text">intermediate</div></div>
-                <span className='suggest-time-label'>5 min</span>
+                <span className='suggest-time-label'>25 min</span>
               <img src={lesson_icons} class='suggest-icons'></img>
               </div>
               <div className="suggest-image-cell">
-                <img src={omelet} className="lessoncard-image"></img>
+                <img src={reciepe.img} className="lessoncard-image"></img>
               </div>
               </button> 
             ))}
@@ -84,11 +94,11 @@ function Reciepes(){
               <div class='suggestcard'>
                 <span class='row headertext-lessoncard'>{reciepe.name}</span>
                 <div className="suggest-hard-label"><div className="suggest-hard-label-text">masterchef</div></div>
-                <span className='suggest-time-label'>5 min</span>
+                <span className='suggest-time-label'>45 min</span>
               <img src={lesson_icons} class='suggest-icons'></img>
               </div>
               <div className="suggest-image-cell">
-                <img src={omelet} className="lessoncard-image"></img>
+                <img src={reciepe.img} className="lessoncard-image"></img>
               </div>
               </button> 
             ))}

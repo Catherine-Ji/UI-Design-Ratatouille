@@ -6,7 +6,9 @@ import { useEffect, useState } from 'react';
 import React, { Component } from 'react';
 import lesson_icons from "../lessoncard-icons.png";
 import omelet from "../omelet.jpeg";
-
+import burger from '../burger.jpeg';
+import sausage from '../sausage.jpeg';
+import chicken from '../chicken.webp';
 
 
 function Search({}){
@@ -24,10 +26,9 @@ function Search({}){
 
     const reciepes = [
 
-        {name: "Omelete"},
-        {name: "Sausage"},
-        {name: "Egg"},
-        {name: "Burger"}
+      {name: "Sausage",img:sausage},
+      {name: "Chicken",img:chicken},
+      {name: "Burger",img:burger},
     ];
     
     const [results,setResults] = useState(reciepes);
@@ -73,7 +74,7 @@ function Search({}){
                             <input onChange ={change} type='text' placeholder='Search...' value={val} class='searchbar'></input>
                         </form>
                         <span className='headertext searchkey'>{key}</span>
-                        <span className="search-subtext">5 results</span>
+                        <span className="search-subtext">3 results</span>
                         <br></br><br></br><br></br>
 
 
@@ -88,7 +89,7 @@ function Search({}){
                                         <img src={lesson_icons} class='search-icons'></img>
                                     </div>
                                     <div className="search-image-cell">
-                                        <img src={omelet} className="lessoncard-image"></img>
+                                        <img src={reciepe.img} className="lessoncard-image"></img>
                                     </div>
                                 </li>
                             ))}
