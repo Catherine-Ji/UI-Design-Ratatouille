@@ -27,6 +27,7 @@ import TutorialPage4 from './pages/TutorialPage4';
 import TutorialPage5 from './pages/TutorialPage5';
 import TutorialPage6 from './pages/TutorialPage6';
 import TutorialEnd from './pages/TutorialEnd';
+import IntermediatePage from './pages/IntermediatePage';
 
 export default function App() {
   return (
@@ -59,6 +60,7 @@ export default function App() {
           <Route path="/onboarding-search" element={<Onboarding_Search />}/>
           <Route path="/onboarding-ratatouillify" element={<Onboarding_Ratatouillify />}/>
           <Route path="/*" element={<div>ERROR: Page Not Found</div>} />
+          <Route path="/intermediate" element={<IntermediatePage />}/>
         </Routes>
       </Router>
   );

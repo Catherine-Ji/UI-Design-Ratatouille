@@ -228,7 +228,7 @@ img {
   display: table;
   table-layout: fixed;
   width: 55%;
-  height: 40%;
+  height: 35%;
 }
 
 .lessoncard:hover {
@@ -395,24 +395,24 @@ img {
 .hometext2{
   position: absolute;
   top: 20%;
-  left: 41%;
+  left: 43.5%;
 }
 
 .hometext3{
   position: absolute;
-  left: 52%;
+  left: 56%;
   top: 20%;
 }
 
 .home-newUser-text2{
   position: absolute;
   top: 20%;
-  left: 40%;
+  left: 42%;
 }
 .home-newUser-text3{
   position: absolute;
   top: 20%;
-  left: 51%;
+  left: 54.5%;
 }
 
 .orangetext {
@@ -422,37 +422,37 @@ img {
 .searchtext1{
   position: absolute;
   left: 23%;
-  top: 75%;
+  top: 70%;
 }
 
 .searchtext2{
   position: absolute;
-  top: 75%;
-  left: 47%;
+  top: 70%;
+  left: 49.5%;
 }
 
 .searchtext3{
   position: absolute;
-  left: 55%;
-  top: 75%;
+  left: 58.5%;
+  top: 70%;
 }
 
 .rathometext1{
   position: absolute;
   left: 23%;
-  top: 100%;
+  top: 95%;
 }
 
 .rathometext2{
   position: absolute;
-  top: 100%;
-  left: 43.5%;
+  top: 95%;
+  left: 45.5%;
 }
 
 .rathometext3{
   position: absolute;
-  left: 60%;
-  top: 100%;
+  left: 64%;
+  top: 95%;
 }
 
 .results{
@@ -496,7 +496,7 @@ img {
 
 .home-search-wrapper {
   left: 1.5%;
-  top: 80%;
+  top: 75%;
   align-items: center;
   margin: 10px auto;
   position: absolute;
@@ -507,7 +507,7 @@ img {
 }
 
 .home-search-icon {
-  left: 320px;
+  left: 290px;
   top: 0;
   font-size: 25px;
   height: 100%;
@@ -530,7 +530,7 @@ img {
   height: 6.88%;
   font-size: 24px;
   position: absolute;
-  top: 108%;
+  top: 103%;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Nunito Sans';
@@ -548,7 +548,7 @@ img {
   text-align: center;
   display: block;
   position: absolute;
-  top: 115%;
+  top: 112%;
   left: 27.5%;
 }
 .small-text-home{
@@ -564,7 +564,7 @@ img {
   display: table;
   width: 60%;
   table-layout: fixed;
-  top: 93%;
+  top: 88%;
   left: 21%;
   position: absolute;
 }
@@ -611,7 +611,7 @@ img {
   height: 40%;
   width: auto;
   display: block;
-  padding-left: 20%;
+  padding-left: 23%;
   padding-top: 10%;
 }
 
@@ -691,7 +691,7 @@ img {
 }
 
 .login-field-icon {
-  left: 380px;
+  left: 350px;
   top: 0;
   font-size: 25px;
   height: 100%;
@@ -742,7 +742,7 @@ img {
 .ratatouillify-content{
 /*  background-color:red;*/
   padding-top: 20px;
-  padding-left: 290px;
+  padding-left: 200px;
   padding-right: 50px;
   overflow-y: hidden;
 
@@ -1319,7 +1319,7 @@ margin:0
   position: absolute;
   width: 50px;
   height: 50px;
-  left: 37.6%;
+  left: 40%;
   top: 12.5%;
 }
 
@@ -1378,9 +1378,9 @@ margin:0
 }
 
 .snapshot-image{
-  width: 114.7%;
+  width: 103%;
   height: auto;
-  left: -4.4%;
+  left: -4.0%;
   position: absolute;
 }
 
@@ -1481,8 +1481,8 @@ margin:0
 .left-align{
   text-align: left;
   position: absolute;
-  margin-top: 20px;
-  margin-left: 460px;
+  margin-top: 65px;
+  margin-left: 380px;
   top: 48%;
 }
 
@@ -1506,7 +1506,7 @@ margin:0
 .onboarding-search-img{
   width: 600px;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   border: solid;
   border-radius: 25px;
   border-color: var(--orange);
@@ -1523,7 +1523,7 @@ margin:0
   border-color: var(--orange);
   padding: 20px;
   position: absolute;
-  left: 27.5%;
+  left: 25%;
 }
 
 .rat-title{

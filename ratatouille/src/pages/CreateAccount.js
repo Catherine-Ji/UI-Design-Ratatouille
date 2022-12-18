@@ -25,7 +25,7 @@ export default function Create_account() {
                 </span>
                 <input class="login-input" type="text" placeholder='Password'></input>
             </div> 
-            <button className='loginbtn_grey btn-login' onClick={() => navigate("/home-newUser")}>Create Account</button>
+            <button className='loginbtn_grey btn-login' onClick={() => navigate("/intermediate")}>Create Account</button>
             <Link to="/login" className='link loginlink' >Login</Link>
         </div>
     );

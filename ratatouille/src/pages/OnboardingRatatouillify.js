@@ -32,7 +32,7 @@ export default function Onboarding_Ratatouillify(){
           </p>
 
           <p class="left-align"> <a class="skip" href="/onboarding-search">back</a>
-          <span class="right-align"><a class="skip" href="/home">finished</a> </span>
+          <span class="right-align"><a class="skip" href="/home-newUser">finished</a> </span>
           </p>
         </div>
       </div>

@@ -34,7 +34,7 @@ export default function TutorialPage1() {
                     <div id = 'snapshots'>
                         <div className="tutorial-step tutorial-snapshot">Snapshots from this step:</div>
                         <div className="tutorial-snapshot-image"> 
-                            <img className="snapshot-image" src={snapshot} alt="difficulty" /> 
+                            <img className="snapshot-image" src={snapshot} alt="image of snapshots from this step" /> 
                         </div>
                     </div>
                 </div>

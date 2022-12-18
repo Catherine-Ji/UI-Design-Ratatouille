@@ -28,7 +28,7 @@ export default function Onboarding_Welcome(){
           <img src={Six_people_cooking} alt="six people in the kitchen cooking" class='six-people-cooking'></img>
           <h2> let’s get you cooking! </h2>
           <button onClick={() => {navigate("/onboarding-lesson");}} class="uploaded-ratatouillify-submit-btn"> get started </button>
-          <div> <a class="skip" href="/home">skip</a> </div>
+          <div> <a class="skip" href="/home-newUser">skip</a> </div>
         </div>
       </div>
     </div>

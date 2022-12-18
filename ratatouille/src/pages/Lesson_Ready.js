@@ -14,7 +14,7 @@ function Lesson_Ready(){
       <div class="column left">
         <img src={Logo} class='smallLogo' alt='app logo'></img>
         <div class="container">
-          <i class="fa fa-solid fa-user user" style={{ fontSize: '2em' }} />
+          <i class="fa fa-solid fa-user user" style={{ fontSize: '2em', color: 'var(--grey)' }} />
           <div class="btn-group">
             <button onClick={() => {navigate("/login-landing")}}> Login </button>
             <button onClick={() => {navigate("/")}}>Home</button>

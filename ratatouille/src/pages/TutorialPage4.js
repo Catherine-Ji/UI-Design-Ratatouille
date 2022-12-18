@@ -13,7 +13,7 @@ export default function TutorialPage4() {
             <div class="tutorial-exit" onClick={() => navigate('/home')}>
                 <i class="fa-solid fa-x w3-xxlarge"></i>
             </div>
-            <div className="tutorial-skill-icon" style={{left: '44.5%'}}>
+            <div className="tutorial-skill-icon" style={{left: '48%'}}>
                 <img src={icon} alt="skillet icon" />
             </div>
             <div className="tutorial-scrollable-area">
@@ -34,7 +34,7 @@ export default function TutorialPage4() {
                     <div id = 'snapshots'>
                         <div className="tutorial-step tutorial-snapshot">Snapshots from this step:</div>
                         <div className="tutorial-snapshot-image"> 
-                            <img className="snapshot-image" src={snapshot} alt="difficulty" /> 
+                            <img className="snapshot-image" src={snapshot} alt="images of snapshot from this step" /> 
                         </div>
                     </div>
                 </div>
