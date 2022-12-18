@@ -9,6 +9,9 @@ import burger from '../burger.jpeg';
 import pasta from '../pasta.jpeg';
 import noodles from '../noodles.jpeg';
 import greeksalad from '../greeksalad.jpeg';
+import padthai from '../padthai.jpeg';
+import meatball from '../meatball.jpeg';
+import salmon from '../salmon.jpeg';
 import chicken from '../chicken.webp';
 import back from "../back icon.png";
 
@@ -27,16 +30,16 @@ function Reciepes(){
 
   const mediumrecipes = [
 
-    {name:"Pad Thai",img:omelet},
-    {name: "Pasta",img:pasta},
-    {name:"Meatballs",img:omelet}
+    {name:"Pad Thai",img:padthai},
+    {name:"Pasta",img:pasta},
+    {name:"Meatballs",img:meatball}
 
   ];
 
 
   const hardreciepes = [
 
-        {name:"Salmon",img:omelet}
+        {name:"Salmon",img:salmon}
 
   ];
 
@@ -82,7 +85,7 @@ function Reciepes(){
               <img src={lesson_icons} class='suggest-icons'></img>
               </div>
               <div className="suggest-image-cell">
-                <img src={omelet} className="lessoncard-image"></img>
+                <img src={reciepe.img} className="lessoncard-image"></img>
               </div>
               </button> 
             ))}
@@ -95,7 +98,7 @@ function Reciepes(){
               <img src={lesson_icons} class='suggest-icons'></img>
               </div>
               <div className="suggest-image-cell">
-                <img src={omelet} className="lessoncard-image"></img>
+                <img src={reciepe.img} className="lessoncard-image"></img>
               </div>
               </button> 
             ))}
