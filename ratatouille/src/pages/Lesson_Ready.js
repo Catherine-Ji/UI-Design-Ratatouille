@@ -30,7 +30,7 @@ function Lesson_Ready(){
             <h1>Your new lesson is ready!</h1>
             <div class="lesson-start-button">
             <img src={OmeletRecipe} class='omelet-recipe' alt='omelet recipe lesson'></img>
-            <button onClick={() => {navigate("/tutorial-landing");}} class="uploaded-ratatouillify-submit-btn"> Start cooking! </button>
+            <button onClick={() => {navigate("/tutorial-landing");}} class="uploaded-ratatouillify-submit-btn" style={{position: 'absolute', top: '20%'}}> Start cooking! </button>
             </div>
             <h1>Skills in this recipe include: </h1>
             <img src={OmeletSkills} class='omelet-skills' alt='uploaded omelet recipe'></img>
