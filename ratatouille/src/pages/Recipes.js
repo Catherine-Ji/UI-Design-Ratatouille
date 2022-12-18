@@ -8,7 +8,7 @@ function Reciepes(){
     let navigate = useNavigate();
     const reciepes = [
 
-      {name: "Omelete"},
+      {name: "Omelet"},
       {name: "Sausage"},
       {name: "Egg"},
       {name: "Bacon"},
