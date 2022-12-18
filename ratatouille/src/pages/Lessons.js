@@ -46,7 +46,7 @@ function Lessons(){
           <span className='headertext lessontext2'>Other Suggested Lessons</span>
           <div class="suggestions">
             {reciepes.map((reciepe)=>(
-              <button className="suggest">
+              <button className="suggest" onClick={() => { navigate("/tutorial-landing"); } }>
               <div class='suggestcard'>
                 <span class='row headertext-lessoncard'>{reciepe.name}</span>
                 <div className="suggest-difficulty-label"><div className="suggest-difficulty-label-text">easy</div></div>

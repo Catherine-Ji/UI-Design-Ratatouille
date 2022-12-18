@@ -38,7 +38,7 @@ function Reciepes(){
       </div><div class="column right">
           <div class="all">
             {reciepes.map((reciepe)=>(
-              <button className="suggest">
+              <button className="suggest" onClick={() => { navigate("/tutorial-landing"); } }>
               <div class='suggestcard'>
                 <span class='row headertext-lessoncard'>{reciepe.name}</span>
                 <div className="suggest-difficulty-label"><div className="suggest-difficulty-label-text">easy</div></div>
