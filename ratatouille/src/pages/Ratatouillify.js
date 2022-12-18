@@ -34,7 +34,7 @@ function Ratatouillify(){
 
         <div class="ratatouillify-manually-input">
             <h1> Manually Input </h1>
-            <textarea id="manual-textarea" rows="4" cols="50"> Type or paste your recipe here...</textarea> <img src={Microphone} alt="microphone icon for verbally uploading a recipe" class="microphoneimage"></img>
+            <textarea id="manual-textarea" rows="4" cols="50" placeholder="Type or paste your recipe here..."></textarea> <img src={Microphone} alt="microphone icon for verbally uploading a recipe" class="microphoneimage"></img>
         </div>
 
         <div class="ratatouillify-submit">
