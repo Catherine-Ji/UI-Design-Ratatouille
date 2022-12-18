@@ -456,9 +456,22 @@ img {
 }
 
 .results{
-  margin-left: 4%
+  margin-left: 20%;
+  position: relative;
+  top: 5%;
 }
 
+.search-subtext {
+  position: absolute;
+  left: 24%;
+  top: 22%;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--grey);
+}
 
 .searchbar {
   height: 70px;
@@ -932,9 +945,9 @@ margin:0
 
 .suggestions{
   position: relative;
-  left: 10%;
+  left: 22%;
   height: 458px;
-  top: 480px;
+  top: 520px;
   overflow-x: scroll;
   display: flex;
 }
@@ -1022,6 +1035,13 @@ margin:0
   font-size: 20px;
   line-height: 27px;
   color: var(--grey);
+}
+
+.backIcon{
+  position: absolute;
+  left: 16%;
+  top: 4.9%;
+  z-index: 1;
 }
 
 .list-item {
