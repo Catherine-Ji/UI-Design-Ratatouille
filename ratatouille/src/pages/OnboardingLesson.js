@@ -11,7 +11,7 @@ export default function Onboarding_Lesson(){
       <div class="column left">
         <img src={Logo} class='smallLogo'></img>
         <div class="container">
-          <i class="fa fa-solid fa-user user" style={{ fontSize: '2em' }} />
+          <i class="fa fa-solid fa-user user" style={{ fontSize: '2em', color: 'var(--grey)' }} />
           <div class="btn-group">
             <button onClick={() => {navigate("/login-landing")}}> Login </button>
             <button onClick={() => {navigate("/")}}>Home</button>
