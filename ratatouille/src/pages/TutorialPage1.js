@@ -1,17 +1,21 @@
 import '../App.css';
 import {useNavigate} from 'react-router-dom';
-import video from '../tutorialMedia/omelet_1 720.mp4'
+import video from '../tutorialMedia/omelet_1 720.mp4';
+import snapshot from '../tutorialMedia/1.png';
+import icon from '../tutorialMedia/Egg Cracking.png';
 
 export default function TutorialPage1() {
     let navigate = useNavigate();
     return (
         <div className='TutorialPageWrapper'>
             <div className="tutorial-step">Step 1/6: Omelet</div>
-            <div className="tutorial-step" style={{top: '15%'}}>Food prep: Egg cracking </div>
+            <div className="tutorial-step" style={{top: '15%'}}>Food prep -- Egg cracking </div>
             <div class="tutorial-exit" onClick={() => navigate('/home')}>
                 <i class="fa-solid fa-x w3-xxlarge"></i>
             </div>
-            <div className="tutorial-skill-icon"></div>
+            <div className="tutorial-skill-icon">
+                <img src={icon} alt="egg cracking icon" />
+            </div>
             <div className="tutorial-scrollable-area">
                 <div className="tutorial-scrollable-inner">
                     <div className="tutorial-skill-description">Crack eggs into a medium bowl</div>
@@ -30,12 +34,12 @@ export default function TutorialPage1() {
                     <div id = 'snapshots'>
                         <div className="tutorial-step tutorial-snapshot">Snapshots from this step:</div>
                         <div className="tutorial-snapshot-image"> 
-                            <br></br>  
+                            <img className="snapshot-image" src={snapshot} alt="difficulty" /> 
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="tutorial-back-btn" style={{left: '89.1%'}}>
+            <div className="tutorial-back-btn" style={{left: '89.1%'}} onClick={() => navigate('/tutorial-page-2')}>
                 next
                 <i class="fa-solid fa-right-long w3-xxlarge"></i>
             </div>
