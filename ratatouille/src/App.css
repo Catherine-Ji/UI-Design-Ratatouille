@@ -1194,6 +1194,10 @@ margin:0
 
 .lesson-card-img{
   width: 500px;
+  border: solid;
+  border-radius: 25px;
+  border-color: var(--orange);
+  padding: 20px;
 }
 
 .test-lesson-card-img{
@@ -1228,6 +1232,10 @@ margin:0
   width: 600px;
   margin-top: 20px;
   margin-bottom: 50px;
+  border: solid;
+  border-radius: 25px;
+  border-color: var(--orange);
+  padding: 20px;
 }
 
 .onboarding-ratatouillify-text{
@@ -1235,6 +1243,10 @@ margin:0
   max-width: 550px;
   font-size: 20px;
   margin-top: 50px;
+  border: solid;
+  border-radius: 25px;
+  border-color: var(--orange);
+  padding: 20px;
 }
 
 .rat-title{
