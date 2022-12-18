@@ -57,7 +57,7 @@ function Search({}){
             <div class="column left">
                 <img src={Logo} class='smallLogo'></img>
                 <div class="container">
-                    <i class="fa fa-solid fa-user user" style={{ fontSize: '2em' }} />
+                    <i class="fa fa-solid fa-user user" style={{ fontSize: '2em', color: 'var(--grey)' }} />
                     <div class="btn-group">
                         <button onClick={() => { navigate("/login-landing"); } }> Login </button>
                         <button onClick={() => { navigate("/"); } }>Home</button>
@@ -73,7 +73,7 @@ function Search({}){
                             <input onChange ={change} type='text' placeholder='Search...' value={val} class='searchbar'></input>
                         </form>
                         <span className='headertext searchkey'>{key}</span>
-                        
+                        <span className="search-subtext">5 results</span>
                         <br></br><br></br><br></br>
 
 

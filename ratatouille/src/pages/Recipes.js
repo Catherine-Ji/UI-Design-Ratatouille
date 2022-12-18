@@ -3,6 +3,7 @@ import {useNavigate} from 'react-router-dom';
 import Logo from '../Logo_orange.png';
 import lesson_icons from '../lessoncard-icons.png';
 import omelet from '../omelet.jpeg';
+import back from "../back icon.png";
 
 function Reciepes(){
     let navigate = useNavigate();
@@ -18,10 +19,13 @@ function Reciepes(){
   ];
     return (
     <><div class="row">
+        <div className="backIcon">
+          <img src={back} onClick={() => { navigate("/lessons"); } }></img>
+        </div>
         <div class="column left">
           <img src={Logo} class='smallLogo'></img>
           <div class="container">
-            <i class="fa fa-solid fa-user user" style={{ fontSize: '2em' }} />
+            <i class="fa fa-solid fa-user user" style={{ fontSize: '2em', color: 'var(--grey)' }} />
             <div class="btn-group">
               <button onClick={() => { navigate("/login-landing"); } }> Login </button>
               <button onClick={() => { navigate("/home"); } }>Home</button>
