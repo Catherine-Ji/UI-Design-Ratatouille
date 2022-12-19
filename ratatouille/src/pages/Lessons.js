@@ -61,7 +61,7 @@ function Lessons(){
               </button> 
             ))}
             </div>
-          <button className="orangeButton" onClick={() => {navigate("/reciepes");}}>View all reciepes</button>
+          <button className="orangeButton" style={{left: '50%', top: '113%', height: '10%'}} onClick={() => {navigate("/reciepes");}}>View all reciepes</button>
         </div></>
   );
 }
