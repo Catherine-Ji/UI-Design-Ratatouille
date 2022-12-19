@@ -20,7 +20,7 @@ export default function Tutorial_landing() {
             <button className="orangeButton tutorial-start" onClick={() => navigate('/tutorial-page-1')}>Start cooking!</button>
             <h1 className='tutorial-header' style={{top: '15%'}}>Skills in this recipe:</h1>
             <img className="tutorial-skills" src={skills} alt="skills" />
-            <h1 className='tutorial-header' style={{top: '45%'}}>Tools and Equipments:</h1>
+            <h1 className='tutorial-header' style={{top: '45%'}}>Tools and Equipment:</h1>
             <div className="tutorial-equipments">
                 <img className="tools-image" src={tutorial_tools} alt="tools" />
             </div>

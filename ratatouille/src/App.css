@@ -611,7 +611,8 @@ img {
   height: 40%;
   width: auto;
   display: block;
-  padding-left: 23%;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 10%;
 }
 
@@ -619,7 +620,8 @@ img {
   height: 30%;
   width: auto;
   display: block;
-  padding-left: 25%;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 5%;
 }
 

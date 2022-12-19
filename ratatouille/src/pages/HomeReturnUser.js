@@ -61,7 +61,7 @@ export default function Home_returnUser() {
             <img src={omelet} className="lessoncard-image"></img>
           </div>
         </button>
-        <span className='headertext searchtext1' >Get help with something</span><span class='headertext searchtext2 orangetext'> &nbsp; specifc</span><span class='headertext searchtext3'>...</span>
+        <span className='headertext searchtext1' >Get help with something</span><span class='headertext searchtext2 orangetext'> &nbsp; specific</span><span class='headertext searchtext3'>...</span>
         {/* search bar */}
         <form onSubmit={submitsearch} className="home-search-wrapper">
           <span class="home-search-icon">
@@ -75,7 +75,7 @@ export default function Home_returnUser() {
           <span className="small-text-home search-hint">knife skills</span>
           <span className="small-text-home search-hint">pasta recipes</span>
         </div>
-        <span className='headertext rathometext1' >Upload a recipt to be </span><span className='headertext rathometext2 orangetext'> &nbsp; Ratatouilli-fied</span><span className='headertext rathometext3'>...</span>
+        <span className='headertext rathometext1' >Upload a recipe to be </span><span className='headertext rathometext2 orangetext'> &nbsp; Ratatouilli-fied</span><span className='headertext rathometext3'>...</span>
         <button className="orangeButton" onClick={() => {navigate("/ratatouillify");}}>Ratatouillify</button>
         <div className="rat-home-text">
           <h3 className="small-text-home">Don’t see the recipe you’re looking for?</h3>
